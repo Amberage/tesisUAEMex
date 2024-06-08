@@ -1,0 +1,1003 @@
+//body {background-color:#EFEFEF}
+
+/* Added by CJBV for testing and debugging */
+
+body
+	{
+		scrollbar-face-color: #E7E3DE;
+		scrollbar-hightlight-color: #E7E3DE;
+		scrollbar-shadow-color: Gray;
+		scrollbar-3dlight-color: Gray;
+		scrollbar-darkshadow-color: #F7F3EF;
+		scrollbar-arrow-color: Gray;
+		scrollbar-track-hightlight-color: #FFF;
+		scrollbar-track-color : #F7F3EF;
+		scrollbar-base-color : #F7F3EF;
+	}
+
+.camila_separator
+	{	
+		background-color: #003366;
+	}
+
+div
+	{
+		scrollbar-face-color: #E7E3DE;
+		scrollbar-hightlight-color: #E7E3DE;
+		scrollbar-shadow-color: Gray;
+		scrollbar-3dlight-color: Gray;
+		scrollbar-darkshadow-color: #F7F3EF;
+		scrollbar-arrow-color: Gray;
+		scrollbar-track-hightlight-color: #FFF;
+		scrollbar-track-color : #F7F3EF;
+		scrollbar-base-color : #F7F3EF;
+	}
+
+.camila_status_text
+	{
+		font-family:verdana,arial;
+		font-size:7pt;
+		color:#036;
+		background-color:#ccc;
+		border-bottom:1px solid #999;
+		border-right :1px solid #999;
+	}
+
+.camila_status_error
+	{
+		font-family:verdana,arial;
+		font-size:7pt;
+		color:red;
+		background-color:#ccc;
+		border-bottom:1px solid #999;
+		border-right :1px solid #999;
+	}
+
+.camila_error
+	{
+		font-family:verdana,arial;
+		font-size:7pt;
+		color:red;
+	}
+
+.camila_container
+	{	
+		border-bottom:1px solid #003366;
+		border-left :1px solid #003366;
+		border-right :1px solid #003366;
+	}
+
+/* end of CJBV added styles */
+
+
+/*----------------------------------Final Styles-------------------------------*/
+
+/*Tree Styles*/
+
+.advSearchBody
+	{
+		background-color:white;
+	}
+
+.treeBody
+	{
+		background-color:white;
+	}
+
+a.camila_tree_link 
+	{
+		margin-left:2px;
+		font-family:verdana,arial;
+		font-size:10px;color:#036;
+		text-decoration:none;
+	}
+
+a.camila_tree_link:active,link
+	{
+		margin-left:2px;
+		font-family:verdana,arial;
+		font-size:10px;
+		color:#036;
+		text-decoration:underline;
+	}
+
+a.camila_tree_link:hover
+	{
+		margin-left:2px;
+		font-family:verdana,arial;
+		font-size:10px;
+		color:#036;
+		text-decoration:underline;
+	}
+
+a.camila_treeSelected_link
+	{
+		margin-left:2px;
+		background-color:#A5BED6;
+		font-family:verdana,arial;
+		font-size:10px;
+		color:#036;
+		text-decoration:none;
+	}
+
+a.camila_treeSelected_link:active,link
+	{
+		margin-left:2px;
+		background-color:#A5BED6;
+		font-family:verdana,arial;
+		font-size:10px;
+		color:#036;
+		text-decoration:underline;
+	}
+
+a.camila_treeSelected_link:hover
+	{
+		margin-left:2px;
+		background-color:#A5BED6;
+		font-family:verdana,arial;
+		font-size:10px;
+		color:#036;
+		text-decoration:underline;
+	}
+
+/*End Tree Styles*/
+
+.camila_listResizeHandler
+	{
+		width: 3px;
+		height: 20px;
+		display: inline;
+		cursor: e-resize;
+		margin-right: 5px;
+	}
+
+
+.camila_txtCommon
+	{
+		font-size: 10px;
+		color: #000000;
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+	}
+
+.camila_header 
+	{
+		background-color: #003366;
+		padding: 0px;
+		line-height: 18px;
+		height: 18px;
+		margin: 0px;
+	}
+
+.camila_header_title 
+	{
+		font-size: 10px;
+		COLOR: #ffffff;
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+		line-height: 11px;
+		font-weight: bold;
+		padding-right: 7px;
+		padding-left: 7px;
+	}
+
+.camila_header_separator_background 
+	{
+		background-color: #CCCCCC;
+		padding: 0px;
+		line-height: 18px;
+		border-top: thin solid #003366;
+		border-right: none;
+		border-bottom: thin solid #003366;
+		border-left: none;
+	}
+
+.camila_actions_container 
+	{
+		background-color: #003366;
+		padding: 0px;
+		line-height: 18px;
+		height: 18px;
+		margin: 0px;
+		horizontal-align:right;
+	}
+
+.camila_actions_enabled 
+	{
+		font-size: 10px;
+		color: #FFFFFF;
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+		line-height: 11px;
+		padding-right: 7px;
+		padding-left: 7px;
+	}
+
+a.camila_actions_enabled:link 
+	{
+		font-family: Verdana, Arial, Helvetica, sans-serif; 
+		font-size: 10px; 
+		color: #FFFFFF; 
+		text-decoration: none; 
+		font-weight: normal
+	}
+
+a.camila_actions_enabled:hover 
+	{
+		font-family: Verdana, Arial, Helvetica, sans-serif; 
+		font-size: 10px; 
+		color: #FFFFFF; 
+		text-decoration: underline; 
+		font-weight: normal
+	}
+
+a.camila_actions_enabled:visited 
+	{
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+		font-size: 10px;
+		color: #FFFFFF;
+		text-decoration: none;
+		font-weight: normal;
+	}
+
+a.camila_actions_enabled:visited:hover 
+	{ 
+		font-family: Verdana, Arial, Helvetica, sans-serif; 
+		font-size: 10px; 
+		color: #FFFFFF; 
+		text-decoration: underline; 
+		font-weight: normal
+	}
+
+a.camila_actions_enabled:active 
+	{
+		font-family: Verdana, Arial, Helvetica, sans-serif; 
+		font-size: 10px; 
+		color: #FFA41A; 
+		text-decoration: none
+	}
+
+.camila_actions_disabled 
+	{
+		font-size: 10px;
+		COLOR: #808080;
+		FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+		line-height: 11px;
+		text-decoration: none;
+		cursor: crosshair;
+		padding-right: 7px;
+		padding-left: 7px;
+	}
+
+.camila_table_row_title
+	{
+		background-color: #527594;
+		text-align: left;
+	}
+
+.camila_table_title_active
+	{
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+		font-size: 10px;
+		font-weight: bold;
+		color: #FFFFFF;
+	}
+
+.camila_table_title_inactive
+	{
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+		font-size: 10px;
+		font-weight: normal;
+		color: #FFFFFF;
+		decoration: underline;
+	}
+
+a.camila_table_title_inactive:link 
+	{
+		font-family: Verdana, Arial, Helvetica, sans-serif; 
+		font-size: 10px; 
+		color: #FFFFFF; 
+		text-decoration: underline; 
+		font-weight:normal
+	}
+
+a.camila_table_title_inactive:visited 
+	{ 
+		font-family: Verdana, Arial, Helvetica, sans-serif; 
+		font-size: 10px; 
+		color: #FFFFFF; 
+		text-decoration:underline; 
+		font-weight:normal
+	}
+
+a.camila_table_title_inactive:hover 
+	{
+		font-family: Verdana, Arial, Helvetica, sans-serif; 
+		font-size: 10px; 
+		color: #FFFFFF; 
+		text-decoration: none; 
+		font-weight:normal
+	}
+
+a.camila_table_title_inactive:active 
+	{
+		font-family: Verdana, Arial, Helvetica, sans-serif; 
+		font-size: 10px; 
+		color: #FFFFFF; 
+		text-decoration: none; 
+		font-weight:bold
+	}
+
+.camila_table_title_disable
+	{
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+		font-size: 10px;
+		font-weight: normal;
+		color: #CCCCCC;
+		decoration: none;
+	}
+
+.camila_table_color1
+	{
+		background-color: #E1E1DF;
+	}
+
+.camila_table_color2
+	{
+		background-color: #F0F0EE;
+	}
+
+.camila_table_title_checkBox 
+	{
+		height: 10px;
+		width: 10px;
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+		border: none;
+		valign: top;
+	}
+
+.camila_table_row_checkBox 
+	{
+		height: 11px;
+		width: 11px;
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+		border: none;
+	}
+
+.camila_table_text
+	{
+		font-size: 10px;
+		color: #000000;
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+		line-height: 11px;
+		padding-right: 5px;
+		padding-left: 5px;
+		text-decoration: none
+	}
+
+a.camila_table_text:link 
+	{
+		font-family: Verdana, Arial, Helvetica, sans-serif; 
+		font-size: 10px; 
+		color: #000000; 
+		text-decoration: none; 
+		font-weight: normal
+	}
+
+a.camila_table_text:hover 
+	{
+		font-family: Verdana, Arial, Helvetica, sans-serif; 
+		font-size: 10px; 
+		color: #000000; 
+		text-decoration: underline; 
+		font-weight: normal
+	}
+
+a.camila_table_text:visited
+	{
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+		font-size: 10px;
+		color: #000000;
+		text-decoration: none;
+		font-weight: normal;
+	}
+
+a.camila_table_text:visited:hover 
+	{ 
+		font-family: Verdana, Arial, Helvetica, sans-serif; 
+		font-size: 10px; color: #000000; 
+		text-decoration: underline; 
+		font-weight: normal
+	}
+
+a.camila_table_text:active 
+	{
+		font-family: Verdana, Arial, Helvetica, sans-serif; 
+		font-size: 10px; 
+		color: #FFA41A; 
+		text-decoration: none
+	}
+
+/* TABS */
+.camila_tab_first 
+	{
+		background-color: #FFFFFF;
+		width: 7px;
+		padding-top: 0px;
+		padding-bottom: 0px;
+	}
+
+.camila_tab_active 
+	{
+		background-color: #003366;
+		text-align: center;
+		vertical-align: baseline;
+		padding: 0px 18px;
+		line-height: 18px;
+		border-left: 1px solid #FFFFFF;
+		font-family: Verdana, Arial, Helvetica, sans-serif; 
+		font-size: 10px; 
+		color: #FFFFFF; 
+		cursor: default ;
+	}
+
+.camila_tab_inactive 
+	{
+		background-color: #527594;
+		text-align: center;
+		vertical-align: middle;
+		padding: 0px 18px;
+		line-height: 18px;
+		border-top: none;
+		border-bottom: 1px solid #FFFFFF;
+		border-left: 1px solid #FFFFFF;
+		font-family: Verdana, Arial, Helvetica, sans-serif; 
+		font-size: 10px; 
+		color: #FFFFFF; 
+		cursor: hand ;
+	}
+
+.camila_tab_hover 
+	{
+		background-color: #527594;
+		text-align: center;
+		vertical-align: middle;
+		padding: 0px 18px;
+		line-height: 18px;
+		border-top: none;
+		border-bottom: 1px solid #FFFFFF;
+		border-left: 1px solid #FFFFFF;
+		font-family: Verdana, Arial, Helvetica, sans-serif; 
+		font-size: 10px; 
+		color: #FFFFFF; 
+		cursor: hand ;
+		text-decoration: underline
+	}
+
+.camila_tab_disabled 
+	{
+		background-color: #CCCCCC;
+		text-align: center;
+		vertical-align: middle;
+		padding: 0px 18px;
+		line-height: 18px;
+		border-top: none;
+		border-left: 1px solid #FFFFFF;
+		border-bottom: 1px solid #FFFFFF;
+		font-family: Verdana, Arial, Helvetica, sans-serif; 
+		font-size: 10px;
+		color: #808080; 
+		cursor: crosshair; ;
+	}
+
+.camila_tab_disabled_current 
+	{
+		background-color: #CCCCCC;
+		text-align: center;
+		vertical-align: middle;
+		padding: 0px 18px;
+		line-height: 18px;
+		border-top: none;
+		border-left: 1px solid #FFFFFF;
+		border-bottom: 1px solid #FFFFFF;
+		font-family: Verdana, Arial, Helvetica, sans-serif; 
+		font-size: 10px;
+		color: #808080; 
+		text-decoration: underline;
+		cursor: crosshair; ;
+	}
+
+
+
+/* end TABS */
+
+
+
+/* Outlook */ 
+.camila_outlook_active 
+	{
+		background-color: #003366;
+		padding: 0px 5px;
+		line-height: 18px;
+		border-bottom: 1px solid #808080;
+		font-family: Verdana, Arial, Helvetica, sans-serif; 
+		font-size: 10px; 
+		color: #FFFFFF; 
+		cursor: default ;
+	}
+
+.camila_outlook_inactive 
+	{
+		background-color: #527594;
+		padding: 0px 5px;
+		line-height: 18px;
+		border-bottom: 1px solid #808080;
+		font-family: Verdana, Arial, Helvetica, sans-serif; 
+		font-size: 10px; 
+		color: #FFFFFF; 
+		cursor: hand ;
+	}
+
+.camila_outlook_hover 
+	{
+		background-color: #003366;
+		padding: 0px 5px;
+		line-height: 18px;
+		border-bottom: 1px solid #808080;
+		font-family: Verdana, Arial, Helvetica, sans-serif; 
+		font-size: 10px; 
+		color: #FFFFFF; 
+		cursor: hand ;
+		text-decoration: underline
+	}
+
+.camila_subLevel
+	{
+	    background-color:#F7F3EF;
+	    padding-left:20px;
+	    font-family: Verdana, Arial, Helvetica, sans-serif;
+		font-size: 10px;
+		color: #003063;
+		cursor: hand ;
+		border-bottom: 1px solid #A09EA0;
+	}
+/* End Outlook*/
+
+
+
+/*forms*/
+
+.camila_form_title_label
+	{
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+		font-size: 10px;
+		font-weight: normal;
+		color: #FFFFFF;
+		decoration: none;
+		text-align: right;
+	}
+
+
+	
+.camila_form_title_text
+	{
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+		font-size: 10px;
+		font-weight: normal;
+		color: #FFFFFF;
+		decoration: none;
+		text-align: left;
+	}
+
+.camila_form_label
+	{
+		font-size: 10px;
+		color: #000000;
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+		line-height: 11px;
+		padding-right: 5px;
+		padding-left: 5px;
+		text-align: right;
+		background-color: #E6E3BA;
+		vertical-align: top;
+	}
+	
+.camila_form_label_error
+	{
+		font-size: 10px;
+		color: #FFA41A;
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+		line-height: 11px;
+		padding-right: 5px;
+		padding-left: 5px;
+		text-align: right;
+		background-color: #E1E1DF;
+		vertical-align: top;
+	}
+
+.camila_form_label_message_error
+	{
+		font-size: 10px;
+		color: #FFA41A;
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+		padding: 5px;
+		text-align: right;
+		background-color: #E1E1DF;
+	}
+
+.camila_form_label_collection_title
+	{
+		font-size: 10px;
+		color: #000000;
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+		font-weight: bold;
+		line-height: 11px;
+		padding-right: 5px;
+		padding-left: 5px;
+		text-align: right;
+		background-color: #E1E1DF;
+		vertical-align: top;
+	}
+	
+.camila_form_label_collection_title_error
+	{
+		font-size: 10px;
+		color: #FFA41A;
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+		font-weight: bold;
+		line-height: 11px;
+		padding-right: 5px;
+		padding-left: 5px;
+		text-align: right;
+		background-color: #E1E1DF;
+		vertical-align: top;
+	}
+
+.camila_form_text
+	{
+		font-size: 10px;
+		color: #000000;
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+		line-height: 11px;
+		padding-right: 5px;
+		padding-left: 5px;
+		text-align: left;
+		background-color: #F0F0EE;
+		vertical-align: top;
+	}
+	
+.camila_form_text_0
+	{
+		font-size: 10px;
+		color: 26420B;
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+		line-height: 11px;
+		padding-right: 5px;
+		padding-left: 5px;
+		text-align: left;
+		background-color: #FFFFFF;
+		vertical-align: top;
+	}
+		
+.camila_form_cell_collection
+	{
+		background-color: #F0F0EE;
+		margin: 0px;
+		padding: 0px;
+	}
+
+.camila_form_cell_collection_error
+	{
+		background-color: #FFA41A;
+		margin: 0px;
+		padding: 0px;
+	}
+
+.camila_form_collection_table
+	{
+		margin: 0px;
+		padding: 0px;
+		border: 0px;
+		text-align: left;
+		vertical-align: top;
+	}
+
+.camila_form_collection_active_text
+	{
+		font-size: 10px;
+		color: #000000;
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+		line-height: 20px;
+		padding-left: 5px;
+	}
+
+a.camila_form_collection_active_text:link 
+	{
+		font-family: Verdana, Arial, Helvetica, sans-serif; 
+		font-size: 10px; 
+		color: #000000; 
+		text-decoration: none; 
+		font-weight: normal;
+	}
+
+a.camila_form_collection_active_text:hover 
+	{
+		font-family: Verdana, Arial, Helvetica, sans-serif; 
+		font-size: 10px; 
+		color: #000000; 
+		text-decoration: underline; 
+		font-weight: normal;
+	}
+
+a.camila_form_collection_active_text:visited 
+	{
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+		font-size: 10px;
+		color: #000000;
+		text-decoration: none;
+		font-weight: normal;
+	}
+
+a.camila_form_collection_active_text:visited:hover 
+	{ 
+		font-family: Verdana, Arial, Helvetica, sans-serif; 
+		font-size: 10px; 
+		color: #000000; 
+		text-decoration: underline; 
+		font-weight: normal;
+	}
+
+a.camila_form_collection_active_text:active 
+	{
+		font-family: Verdana, Arial, Helvetica, sans-serif; 
+		font-size: 10px; 
+		color: #FFA41A; 
+		text-decoration: none;
+	}
+
+.camila_form_inputText 
+	{
+		font-family:verdana, arial;
+		font-size:10px;
+		padding-left:3px;
+		padding-right:3px;
+		height:18px;
+		color:#000000;
+		border:1px solid #999999;
+		background-color: #FAF8F5;
+	}
+
+
+.camila_form_checkBox
+	{
+		height: 12px;
+		width: 12px;
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+		border: none;
+		valign: top;
+	}
+
+
+.camila_form_textarea 
+	{
+		font-family:verdana,arial;
+		font-size:10px;
+		color:#000000;
+		padding-top:2px;
+		padding-bottom:2px;
+		padding-left:5px;
+		padding-right:5px;
+		border:1px solid #999;
+		background-color: #FAF8F5;
+		width: 100%;
+	}
+
+.camila_form_button
+	{
+		font-family:verdana,arial;
+		font-size: 13px;
+		font-weight:normal;
+		color:#000000;
+		height: 25px;
+		align:right;
+		margin-left:2px;
+		margin-right:2px;
+		padding-left:2px;
+		padding-right:2px;
+		border:1px solid #999999;
+		background-color:#CCCCCC;
+	}
+
+.camila_form_button_0
+	{		
+		font-family:verdana,arial;
+		font-size:9px;
+		font-weight:normal;
+		color:#000000;
+		height:16px;
+		align:right;
+		margin-left:2px;
+		margin-right:2px;
+		padding-left:2px;
+		padding-right:2px;
+		border:1px solid #999999;
+		background-color:#CCCCCC;
+        width:64px;
+	}
+.camila_form_select
+	{
+		font-family:verdana,arial;
+		font-size:10px;
+		padding-top:2px;
+		padding-bottom:2px;
+		padding-left:5px;
+		padding-right:5px;
+		color:#000000;
+		background-color:#FAF8F5;
+	}
+	
+/*----------------------------*/
+.camila_table_text_selected1 
+	{
+		background-color: #E1E1DF;
+		font-family: Verdana, Arial, Helvetica, sans-serif; 
+		font-size: 10px; 
+		color: #FFA41A; 
+		text-decoration: none
+	}
+
+.camila_table_text_selected2
+	{
+		background-color: #F0F0EE;
+		font-family: Verdana, Arial, Helvetica, sans-serif; 
+		font-size: 10px; 
+		color: #FFA41A; 
+		text-decoration: none
+	}
+
+.camila_table_text_active1 
+	{
+		background-color: #E1E1DF;
+		font-family: Verdana, Arial, Helvetica, sans-serif; 
+		font-size: 10px; 
+		color: #000000; 
+		text-decoration: underline;
+		cursor: hand;
+	}
+
+.camila_table_text_active2 
+	{
+		background-color: #F0F0EE;
+		font-family: Verdana, Arial, Helvetica, sans-serif; 
+		font-size: 10px; 
+		color: #000000; 
+		text-decoration: underline;
+		cursor: hand;
+	}
+
+
+.camila_table_rows1
+	{
+		background-color: #E1E1DF;
+		font-family: Verdana, Arial, Helvetica, sans-serif; 
+		font-size: 10px; 
+		color: #000000; 
+		text-decoration: none
+	}
+
+.camila_table_rows2
+	{
+		background-color: #F0F0EE;
+		font-family: Verdana, Arial, Helvetica, sans-serif; 
+		font-size: 10px; 
+		color: #000000; 
+		text-decoration: none
+	}
+
+.camila_table_action_active
+	{
+		cursor: hand;
+		text-decoration: underline;
+	}
+
+.camila_table_action_inactive
+	{
+		cursor: hand;
+		text-decoration: none;
+	}
+
+.camila_listSortingArrow
+	{
+		font-family: webdings;
+		color: black;
+		padding: 0;
+		font-size:
+		10px;
+		height: 14px;
+		width: 10px;
+		overflow: hidden;
+		margin-bottom: 2;
+		margin-top: -3;
+		padding: 0;
+		padding-top: 0;
+		padding-bottom: 2;
+	}
+
+.camila_listHeaderRow
+	{
+		background: buttonface;
+		font: menu;
+		border: 1px outset white;
+		cursor: default; 
+		padding-top: 0; 
+		padding: bottom: 0;
+		border-top: 1px solid buttonhighlight;
+		border-left: 1px solid buttonhighlight;
+		border-right: 1px solid buttonshadow;
+		border-bottom: 1px solid buttonshadow;
+		height: 16px;
+	}
+
+.camila_text_coding
+	{
+		font-family:Courier New;
+	}
+
+.camila_table_row_titleI
+	{
+		background-color: #527594;
+		text-align: left;
+	}
+
+.camila_actions_containerI
+	{
+		background-color: #817C33;
+		padding: 0px;
+		line-height: 18px;
+		height: 18px;
+		margin: 0px;
+		horizontal-align:right;
+	}
+
+.camila_actions_containerII
+	{
+		background-color: #336633;
+		padding: 0px;
+		line-height: 18px;
+		height: 18px;
+		margin: 0px;
+		horizontal-align:right;
+	}
+	
+	
+.camila_table_row_title_mov
+	{
+		background-color: #blue;
+		text-align: left;
+	}
+	
+	
+.tooltip {
+	 	font-family: Verdana, Arial, Helvetica, sans-serif;
+	  	font-size: 10px;
+	    position: relative;
+	    display: inline-block;
+	    /*color: #000000; */
+	    /*border-bottom: 1px dotted black;
+	    color: #336633;*/
+	}
+	
+.tooltip .tooltiptext {
+	    visibility: hidden;
+	    width: 270px;
+	    background-color: #91ce94;/*#E9D8A9;*/
+	    /*color: #000000;*/
+	    text-align: left;
+	    border-radius: 6px;
+	    padding: 5px 5px;
+	    /* Position the tooltip */
+	    position: absolute;
+	    z-index: 1;
+	}
+	
+.tooltip:hover .tooltiptext {
+	    visibility: visible;
+	}
+ 	

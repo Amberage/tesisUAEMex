@@ -1,0 +1,20 @@
+[
+  {
+    "applyTo": "directorio.jsp",
+    "headers": [
+      {
+        "name": "content-type",
+        "value": "text/html; charset=UTF-8"
+      }
+    ]
+  },
+  {
+    "applyTo": "menuPublico.jsp",
+    "headers": [
+      {
+        "name": "content-type",
+        "value": "text/html; charset=UTF-8"
+      }
+    ]
+  }
+]
