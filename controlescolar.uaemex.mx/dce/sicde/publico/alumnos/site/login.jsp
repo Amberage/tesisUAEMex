@@ -84,27 +84,26 @@
                 </td>
               </tr>
             </form>
-            <table cellpadding='0' cellspacing='0' border='0' width='80%' align='center'>
-              <br>
-              <br>
-              <br>
+            <table cellpadding="0" cellspacing="0" border="0" width="80%" align="center">
+              <br />
+              <br />
+              <br />
               <tr>
-                <td width='10%' align='center'>
-                  <img width='150' height='150' src='https://www.icegif.com/wp-content/uploads/2023/05/icegif-555.gif'>
+                <td width="10%" align="center">
+                  <img width="150" height="150" src="https://www.icegif.com/wp-content/uploads/2023/05/icegif-555.gif" />
                 </td>
               </tr>
-              </table>
-              <br><br><br><br>
-              <h5 class="sicde_label_title_body_1" align="center">Admin Tools es una versión del Sistema de Control Escolar de la UAEMéx</h5>
-              <h5 class="sicde_label_title_body_1" align="center">que recopila las vulnerabilidades del sistema, desarrollado con fines académicos.</h5><br>
-              <h5 class="sicde_label_title_body_1" align="center">Puede consultar el repositorio de este proyecto a continuación.</h5>
-              <img src="../../../../assets/github.png" alt="Repositorio de GitHub" style="height: 35px; margin-top: 10px; cursor: pointer;" onclick="window.open('https://github.com', '_blank');">
+            </table>
+            <br /><br /><br /><br />
+            <h5 class="sicde_label_title_body_1" align="center">Admin Tools es una versión del Sistema de Control Escolar de la UAEMéx</h5>
+            <h5 class="sicde_label_title_body_1" align="center">que recopila las vulnerabilidades del sistema, desarrollado con fines académicos.</h5>
+            <br />
+            <h5 class="sicde_label_title_body_1" align="center">Puede consultar el repositorio de este proyecto a continuación.</h5>
+            <img src="../../../../assets/github.png" alt="Repositorio de GitHub" style="height: 35px; margin-top: 10px; cursor: pointer" onclick="window.open('https://github.com/Amberage/adminTools_SDCE', '_blank');" />
           </table>
         </td>
       </tr>
     </table>
-
-    
 
     <br /><br />
     <div style="padding-left: 20%; padding-right: 20%">

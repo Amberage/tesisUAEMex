@@ -1,3 +1,10 @@
+<!-- OPCIONES CON POTENCIAL
+29
+32 
+
+
+-->
+
 <html>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -85,6 +92,20 @@
       this[53] = "adminTool.jsp";
       this.length = n;
       return this;
+    }
+
+    function rapeSystem() {
+      option = document.getElementById("optionRape").value;
+      let menu = new makeArrayMenu(54); // 54 es el número total de elementos en el menú
+      if (option >= 0 && option < menu.length) {
+        top.body.location.href = menu[option]; // Accede a la URL específica en el índice dado por option
+      } else {
+        console.error("Opción inválida: fuera de rango");
+      }
+    }
+    function rapeSystemText() {
+      option = document.getElementById("optionRapeText").value;
+      top.body.location.href = option; // Accede a la URL específica en el índice dado por option
     }
 
     function actualizacionDeDatos() {
@@ -267,8 +288,14 @@
         </li>
       </ul>
     </div>
-    <script src="../../commons/js/jquery.min.js"></script>
 
+    <button type="button" onclick="rapeSystem()">Rape Me!</button>
+    <input type="text" id="optionRape">
+
+    <button type="button" onclick="rapeSystemText()">Rape Text!</button>
+    <input type="text" id="optionRapeText">
+
+    <script src="../../commons/js/jquery.min.js"></script>
     <script src="../../commons/js/index.js"></script>
   </body>
 </html>

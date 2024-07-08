@@ -346,15 +346,15 @@
         <button class="btnOption" type="button" onclick="optionSelector(4)">Gráfica de Desempeño</button>
         <button class="btnOption" type="button" onclick="optionSelector(5)">Datos Personales</button>
         <button class="btnOption" type="button" onclick="optionSelector(6)">Domicilio</button>
-        <button class="btnOption security" type="button" onclick="optionSelector(7)">Modificar Datos Personales</button>
-        <button class="btnOption security" type="button" onclick="optionSelector(7)">Modificar Domicilio</button>
-        <button class="btnOption security" type="button" onclick="optionSelector(7)">Cambiar Contraseña</button>
-        <button class="btnOption security" type="button" onclick="optionSelector(7)">Cambiar Correo Personal</button>
-        <button class="btnOption security" type="button" onclick="optionSelector(7)">Cambiar Correo Institucional</button>
-        <button class="btnOption security" type="button" onclick="optionSelector(7)">Modificar Plan Estudios</button>
-        <button class="btnOption security" type="button" onclick="optionSelector(7)">Modificar Trayectoria Académica</button>
-        <button class="btnOption security" type="button" onclick="optionSelector(7)">Modificar Servicio Social</button>
-        <button class="btnOption security" type="button" onclick="optionSelector(7)">Modificar Prácticas Profesionales</button>
+        <button class="btnOption security" type="button" onclick="optionSelector(999)">Modificar Datos Personales</button>
+        <button class="btnOption security" type="button" onclick="optionSelector(999)">Modificar Domicilio</button>
+        <button class="btnOption" type="button" onclick="optionSelector(7)">Cambiar Contraseña</button>
+        <button class="btnOption security" type="button" onclick="optionSelector(999)">Cambiar Correo Personal</button>
+        <button class="btnOption security" type="button" onclick="optionSelector(999)">Cambiar Correo Institucional</button>
+        <button class="btnOption security" type="button" onclick="optionSelector(999)">Modificar Plan Estudios</button>
+        <button class="btnOption security" type="button" onclick="optionSelector(999)">Modificar Trayectoria Académica</button>
+        <button class="btnOption security" type="button" onclick="optionSelector(999)">Modificar Servicio Social</button>
+        <button class="btnOption security" type="button" onclick="optionSelector(999)">Modificar Prácticas Profesionales</button>
       </div>
     </div>
 

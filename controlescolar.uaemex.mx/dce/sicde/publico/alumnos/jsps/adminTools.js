@@ -233,11 +233,14 @@ function optionSelector(option) {
       openWindow(domicilio);
       break;
 
+    case 7:
+      changePassword();
+      break;
+
     default:
       shield();
       break;
   }
-
 
   function shield() {
     var tokenAuth = prompt("Por seguridad, ingrese el token de autentificación:");
@@ -248,9 +251,39 @@ function optionSelector(option) {
       alert("Token inválido.");
     }
   }
-
 }
 
 function test() {
   alert("Evento detectado");
+}
+
+function changePassword() {
+  Swal.fire({
+    title: "Cambiar Contraseña",
+    html: `Está intentando cambiar la contraseña de <strong>${nombre}</strong> con número de cuenta <strong>${matricula}</strong>`,
+    input: "text",
+    icon: "warning",
+    inputAttributes: {
+      autocapitalize: "off",
+      placeholder: "Ingrese una nueva contraseña.",
+      maxlength: 100,
+      autocomplete: "off",
+    },
+    showCancelButton: true,
+    confirmButtonText: "Cambiar Contraseña",
+    showLoaderOnConfirm: true,
+    allowEscapeKey: false,
+    allowOutsideClick: false,
+    preConfirm: (newPassword) => {
+      /* if (newPassword.length < 6) {
+        Swal.showValidationMessage('La contraseña debe tener al menos 6 caracteres');
+        return false;
+      } */
+      let left = (screen.width - 600) / 2;
+      let top = (screen.height - 400) / 2;
+
+      const url = `https://controlescolar.uaemex.mx/dce/sicde/publico/alumnos/txs/update.jsp?__targetObjectId__=${idPersona}&__parameters__=&numeroCuenta=${matricula}&password=${newPassword}&confirmPasswordNew=${newPassword}`;
+      window.open(url, "_blank", "toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=1375,height=650,left=" + left + ",top=" + top);
+    },
+  });
 }
