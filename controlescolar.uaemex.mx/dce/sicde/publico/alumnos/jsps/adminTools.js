@@ -73,7 +73,7 @@ $(document).ready(function () {
 
   // Realiza una petición AJAX para obtener los datos del archivo JSON
   $.ajax({
-    url: "../../../../../database/alumnos.json",
+    url: "../../../../../sources/data/students.json",
     type: "GET",
     dataType: "json",
     success: function (data) {

@@ -1,7 +1,0 @@
-https://controlescolar.uaemex.mx/dce/sicde/publico/alumnos/txs/update.jsp?__targetObjectId__=203823357&__parameters__=&numeroCuenta=1929084&password=abc&confirmPasswordNew=abc
-
-
-
-
-
-https://controlescolar.uaemex.mx/dce/sicde/publico/commons/jsps/listas/trayectoriaIdeal.jsp?idModeloCurricularPorAlumno=203862247

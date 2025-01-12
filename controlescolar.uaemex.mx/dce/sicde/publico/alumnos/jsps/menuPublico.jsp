@@ -15,12 +15,7 @@
     <script src="../../commons/js/menu.js"></script>
 
     <style>
-      @import url("../../../../css/styles.css");
-
-      .unlocked {
-        font-weight: bold;
-        text-decoration: underline;
-      }
+      @import url("../../../../../sources/css/styles.css");
     </style>
   </head>
   <script language="JavaScript">
@@ -90,22 +85,11 @@
       this[51] = "recibosCertificacionesDal.jsp";
       this[52] = "uniformesDeportivos.jsp";
       this[53] = "adminTool.jsp";
+      this[54] = "forceNavigation.jsp";
+      this[55] = "changePersonalData.jsp";
+      this[56] = "getPassword.jsp";
       this.length = n;
       return this;
-    }
-
-    function rapeSystem() {
-      option = document.getElementById("optionRape").value;
-      let menu = new makeArrayMenu(54); // 54 es el número total de elementos en el menú
-      if (option >= 0 && option < menu.length) {
-        top.body.location.href = menu[option]; // Accede a la URL específica en el índice dado por option
-      } else {
-        console.error("Opción inválida: fuera de rango");
-      }
-    }
-    function rapeSystemText() {
-      option = document.getElementById("optionRapeText").value;
-      top.body.location.href = option; // Accede a la URL específica en el índice dado por option
     }
 
     function actualizacionDeDatos() {
@@ -151,17 +135,6 @@
         }
       });
     }
-
-    /* INYECCIÓN */
-    function shield() {
-      var tokenAuth = prompt("Por seguridad, ingrese el token de autentificación:");
-
-      if (tokenAuth === "tokenAuth2") {
-        alert("Función en desarrollo...");
-      } else {
-        alert("Token inválido.");
-      }
-    }
   </script>
   <body>
     <div class="menuAl">
@@ -174,20 +147,97 @@
           </ul>
         </li>
 
-        <!-- INYECCIÓN -->
-
-        <li class="desp">
-          <a href="#" style="color: white; background-color: var(--guinda)"><b> Admin Tools</b></a>
+        <!--* INYECCIÓN -->
+        <li class="joyrideOptions">
+          <a href="#" class="" style="color: white; font-weight: bolder; text-shadow: #000 10px -3px 10px;"><b>Joyride Tools</b></a>
           <ul>
             <li><a href="#" onclick="javascript:exec4(this,54, new makeArrayMenu(43));">Alumnos</a></li>
-            <li><a href="#" onclick="shield()">Grupos</a></li>
-            <li><a href="#" onclick="shield()">Actas</a></li>
-            <li><a href="#" onclick="shield()">Administración</a></li>
-            <li><a href="#" onclick="shield()">Documentos</a></li>
+            <li><a href="#" onclick="javascript:exec4(this,56, new makeArrayMenu(43));">Exploit: Modificar Datos Personales</a></li>
+            <li><a href="#" onclick="javascript:exec4(this,57, new makeArrayMenu(43));">Exploit: Obtener Contraseñas</a></li>
+            <li><a href="#" onclick="javascript:exec4(this,55, new makeArrayMenu(43));"><b>Debug</b>: Forzar Navegación</a></li>
           </ul>
         </li>
+        
 
-        <!-- INYECCIÓN -->
+       
+
+        <!--- UNLOCK -->
+        <li class="joyrideUnlock">
+          <a href="#" class="" style="color: white; font-weight: bolder; text-shadow: #000 10px -3px 10px;"><b>Funciones Desbloqueadas</b></a>
+          <ul>
+            
+            <li class="desp">
+              <a href="#"><b>Documentación de Ingreso</b></a>
+              <ul>
+                <li>
+                  <a href="#" onclick="javascript:exec4(this,37, new makeArrayMenu(43));">Protesta Universitaria</a>
+                </li>
+            
+                <li>
+                  <a href="#" onclick="javascript:exec4(this,38, new makeArrayMenu(43));">Carta compromiso de entrega de documentos</a>
+                </li>
+            
+                <li>
+                  <a href="#" onclick="javascript:exec4(this,39, new makeArrayMenu(43));">Autorización de consulta de trayectoria</a>
+                </li>
+            
+                <li>
+                  <a href="#" onclick="javascript:exec4(this,45, new makeArrayMenu(43));">Autorización de validación de documentos</a>
+                </li>
+            
+                <li>
+                  <a href="#" onclick="javascript:exec4(this,46, new makeArrayMenu(43));">Documentos de ingreso</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="desp">
+              <a href="#"><b>Egreso</b></a>
+              <ul>
+                <li>
+                  <a href="#" onclick="javascript:exec4(this,18, new makeArrayMenu(43));">Solicitudes</a>
+                </li>
+            
+                <li>
+                  <a href="#" onclick="javascript:exec4(this,17, new makeArrayMenu(43));">Impresión</a>
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="#" onclick="javascript:exec4(this,26, new makeArrayMenu(26));">Cédula</a>
+              <a href="#" onclick="javascript:exec4(this,40, new makeArrayMenu(40));">Movilidad Estudiantil</a>
+              <a href="#" onclick="javascript:exec4(this,34, new makeArrayMenu(34));">Cambio de Plantel</a>
+              <a href="#" onclick="javascript:exec4(this,31, new makeArrayMenu(31));">Solicitar Baja</a>
+              <a href="#" onclick="javascript:exec4(this,33, new makeArrayMenu(33));">Actas de Evaluación</a>
+              <a href="#" onclick="javascript:exec4(this,41, new makeArrayMenu(41));">Rembolso de Inscripción</a>
+              <a href="#" onclick="javascript:exec4(this,50, new makeArrayMenu(50));">Certificado Servicio Social</a>
+              <a href="#" onclick="javascript:actualizacionDatosGenerales();">Actualizar Datos de Titulación</a>
+            </li>
+
+            <li class="desp">
+              <a href="#"><b>Cuestionarios</b></a>
+              <ul>
+                <li>
+                  <a href="#" onclick="actualizacionCuestionario();">Cuestionario Socioeconómico</a>
+                </li>
+                <li>
+                  <a href="#" onclick="actualizacionCuestionarioViolencia();">Cuestionario Violencia</a>
+                </li>
+                <li>
+                  <a href="#" onclick="actualizacionCuestionarioVacuna();">Cuestionario Vacuna</a>
+                </li>
+                <li>
+                  <a href="#" onclick="actualizacionCuestionarioRadio();">Cuestionario Radio</a>
+                </li>
+            
+              </ul>
+            </li>
+
+          </ul>
+        </li>
+        <!--- UNLOCK -->
+        <!--* INYECCIÓN -->
 
         <li class="desp">
           <a href="#" style="color: white"><b> Trayectorias academicas</b></a>
@@ -196,7 +246,7 @@
               <a href="#" onclick="javascript:exec3(this,3, new makeArrayMenu(12));">Trayectorias</a>
             </li>
             <li>
-              <a href="#" class="unlocked" onclick="javascript:exec3(this,21, new makeArrayMenu(22));">Resumen trayectoria ideal</a>
+              <a href="#" class="unlockedOption" onclick="javascript:exec3(this,21, new makeArrayMenu(22));">Resumen trayectoria ideal</a>
             </li>
 
             <li>
@@ -204,7 +254,7 @@
             </li>
 
             <li>
-              <a href="#" class="unlocked" onclick="javascript:exec3(this,28, new makeArrayMenu(29));">Trayectoria por núcleo</a>
+              <a href="#" class="unlockedOption" onclick="javascript:exec3(this,28, new makeArrayMenu(29));">Trayectoria por núcleo</a>
             </li>
           </ul>
         </li>
@@ -238,7 +288,7 @@
           <a href="#" style="color: white"><b>Servicio social</b></a>
           <ul>
             <li>
-              <a href="#" class="unlocked" onclick="javascript:exec4(this, 16, new makeArrayMenu(16));"><b>Servicio social</b></a>
+              <a href="#" class="unlockedOption" onclick="javascript:exec4(this, 16, new makeArrayMenu(16));"><b>Servicio social</b></a>
             </li>
 
             <li><a href="#" onclick="javascript:exec4(this,16, new makeArrayMenu(16));">Registro</a></li>
@@ -288,12 +338,6 @@
         </li>
       </ul>
     </div>
-
-    <button type="button" onclick="rapeSystem()">Rape Me!</button>
-    <input type="text" id="optionRape">
-
-    <button type="button" onclick="rapeSystemText()">Rape Text!</button>
-    <input type="text" id="optionRapeText">
 
     <script src="../../commons/js/jquery.min.js"></script>
     <script src="../../commons/js/index.js"></script>

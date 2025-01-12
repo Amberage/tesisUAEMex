@@ -1,0 +1,72 @@
+[
+    {
+        "idCuenta": "0",
+        "user": "1929076",
+        "password": " ",
+        "type": "alumno",
+        "description": "Bypass Login"
+    },
+    {
+        "idCuenta": "1",
+        "user": "0000000",
+        "password": "1234UAEM",
+        "type": "alumno",
+        "description": "Cuenta Oficial de la UAEMéx"
+    },
+    {
+        "idCuenta": "2",
+        "user": "",
+        "password": "",
+        "type": "alumno",
+        "description": "Ingresar Manualmente"
+    },
+    {
+        "idCuenta": "3",
+        "user": "*********",
+        "password": "*********UAEM",
+        "type": "profesor",
+        "description": "CUENTA OFICIAL DE LA UAEMéx"
+    },
+    {
+        "idCuenta": "4",
+        "user": "QUJL8208296HA",
+        "password": "QUJL8208296HApem**",
+        "type": "profesor",
+        "description": "MAT. LETICIA QUINTANA JIMENEZ"
+    },
+    {
+        "idCuenta": "5",
+        "user": "SARK960505BR3",
+        "password": "STAR*flor05",
+        "type": "profesor",
+        "description": "L EN PSIC. KARLA SANCHEZ RODRIGUEZ"
+    },
+    {
+        "idCuenta": "6",
+        "user": "JISJ581002BD0",
+        "password": "Jorge@581079",
+        "type": "profesor",
+        "description": "DR. EN ADM JORGE ARTURO JIMENEZ SIERRA"
+    },
+    {
+        "idCuenta": "7",
+        "user": "SALG870322",
+        "password": "#Irereaver8",
+        "type": "profesor",
+        "description": "L. EN MAT. GABRIEL OCTAVIO SANCHEZ LOPEZ"
+    },
+    {
+        "idCuenta": "8",
+        "user": "YOSM691030HU7",
+        "password": "Ray0DeLuz.98",
+        "type": "profesor",
+        "description": "M. EN E.L. JOSE MANUEL YHMOFF SOTO"
+    },
+    {
+        "idCuenta": "99",
+        "user": "",
+        "password": "",
+        "type": "profesor",
+        "description": "INGRESAR MANUALMENTE"
+    }
+]

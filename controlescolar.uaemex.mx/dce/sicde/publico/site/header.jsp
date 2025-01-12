@@ -1,12 +1,27 @@
-
 <html>
-<body topmargin="0" leftmargin="0" marginheight="0" marginwidth="0">
-	<table width="100%" border="0" cellspacing="0" cellpadding="0">
-		<tr>
-			<td width="30%" >&nbsp;</td>
-			<td width="40%" align="center"><img src="../../../assets/banner.jpg" width="500" height="65"></td>
-			<td width="30%" >&nbsp;</td>
-		</tr>		
-	</table>	
-</body>
+  <style>
+    .bannerPrincipal {
+      width: 100%;
+      height: 80px;
+      margin-bottom: 1rem;
+      padding-bottom: 1rem;
+    }
 
+    .bannerPrincipal img {
+      width: 100%;
+      height: 80px;
+      margin-bottom: 1rem;
+      padding-bottom: 1rem;
+    }
+
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+  </style>
+
+  <div class="bannerPrincipal">
+    <img src="../../../../sources/assets/banner_joyride.gif" />
+  </div>
+</html>

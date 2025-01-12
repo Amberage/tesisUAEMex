@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="../../../../css/camila_I.css" />
     <link rel="stylesheet" type="text/css" href="../../../../sicde/css/sicde_I.css" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="../../../../libraries/sweetalert2.min.js"></script>
+    <script src="../../../../../sources/libraries/sweetalert2.min.js"></script>
     <script src="./adminTools.js"></script>
 
     <style>

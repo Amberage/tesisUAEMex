@@ -1,9 +1,3 @@
-
-
-
-
-
-
  
 <html>
 <head>
@@ -16,7 +10,7 @@
 		<tr>
 			<td class="camila_table_text" nowrap>
 
-				<h1 style="font-size: 1em;">Admin Tools by: remK0r3</h1>
+				<h1 style="font-size: 1em;">Joyride Tools | Alumnos </h1>
 
 			</td>
 			<td class="camila_table_text" nowrap></td>

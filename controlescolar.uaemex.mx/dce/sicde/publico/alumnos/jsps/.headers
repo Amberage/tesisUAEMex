@@ -16,5 +16,23 @@
         "value": "text/html; charset=UTF-8"
       }
     ]
+  },
+  {
+    "applyTo": "mnuinicio.jsp",
+    "headers": [
+      {
+        "name": "content-type",
+        "value": "text/html; charset=UTF-8"
+      }
+    ]
+  },
+  {
+    "applyTo": "forceNavigation.jsp",
+    "headers": [
+      {
+        "name": "content-type",
+        "value": "text/html; charset=UTF-8"
+      }
+    ]
   }
 ]
