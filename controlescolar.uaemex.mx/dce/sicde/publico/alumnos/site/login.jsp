@@ -9,10 +9,10 @@
 <style>
 	@import url("../../../../../sources/css/styles.css");
 </style>
+<script src="../../../../../sources/libraries/sweetalert2.min.js"></script>
+
 
 <body topmargin="0" leftmargin="0" marginheight="0" marginwidth="0" class="bodyLogin">
-
-
 
 <script>
 	function forgetPassword()
@@ -87,11 +87,38 @@ document.addEventListener('DOMContentLoaded', () => {
 	fetch('./../../../../../sources/data/access.json')
     .then(response => {
         if (!response.ok) {
-            throw new Error(`Error al cargar el archivo JSON: ${response.statusText}`);
-        }
-        return response.json(); // Parsear la respuesta como JSON
+			document.getElementById("btnFirmarse").style.display = 'none';
+			function confirmCallback() {
+				location.reload();
+			}
+			let errorBody = `<span style="color: var(--guinda)">No se ha encontrado el fichero <b>controlescolar.uaemex.mx\\sources\\data\\access.json</b>.</span>
+			<br><br>
+			Para poder ingresar a esta versión del sistema necesita este arichvo, 
+			puede descargarlo desde <a href="https://drive.google.com/file/d/1D0pklCj0LfELi5x6ZqZWsumozvau5N5k" target="_blank">aqui</a>.
+			<br><br>
+			Por seguridad, el archivo se encuentra protegido con contraseña, para solicitarla <a href=mailto:amberage.exe@gmail.com>pongasé en contacto con el desarrollador</a>.
+
+			 `
+			Swal.fire({
+				title: '¡Error: Fichero Faltante!',
+				html: errorBody,
+				icon: 'error',
+				confirmButtonColor: "#1A5C50",
+				confirmButtonText: "Ya tengo el archivo, recargar sitio.",
+				backdrop: false,
+				preConfirm: () => {
+					if (confirmCallback && typeof confirmCallback === "function") {
+						confirmCallback()
+					}
+					return true; // Retorna true explícitamente
+				},
+			});
+			throw new Error(`Error al cargar el archivo JSON: ${response.statusText}`);
+		}
+		return response.json(); // Parsear la respuesta como JSON
     })
     .then(data => {
+		document.getElementById("btnFirmarse").style.display = 'block';
         jsonData = data; // Asignar los datos cargados a la variable global
         // Filtrar las cuentas con type "all" o "alumno"
         const filteredData = jsonData.filter(item => item.type === "alumno");
@@ -105,8 +132,15 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     })
     .catch(error => {
-        console.error('Error al procesar el JSON:', error);
-    });
+			Swal.fire({
+				title: 'Error: No se pudó procesar el JSON',
+				text: 'Ocurrió un error al procesar el JSON, el fichero se encontro pero no se pudo procesar. <br><br> Favor de informar al desarrollador.',
+				icon: 'error',
+				backdrop: false // Desactiva el fondo difuminado
+			});
+			document.getElementById("btnFirmarse").style.display = 'none';
+			console.error('Error al procesar el JSON:', error);
+		});
 });
 
 </script>
@@ -189,7 +223,7 @@ document.addEventListener('DOMContentLoaded', () => {
 							<input name="submit1" type="submit" value="Firmarse"
 								class="camila_form_button" maxlength="255">							
 							 -->
-							<input id="btnFirmarse" name="btnFirmarse" type="button" value="Ingresar" style="font-size: 0.7rem;" class="camila_form_button"  onclick="firmarse()" />
+							<input id="btnFirmarse" name="btnFirmarse" type="button" value="Ingresar" style="font-size: 0.7rem; display: none;" class="camila_form_button"  onclick="firmarse()" />
 								
 						</td>
 					</tr>

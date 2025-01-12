@@ -62,6 +62,7 @@ Cada una de las tres herramientas se usa e instala de manera distinta, puede lee
 ## Documentación Adicional
 Se incluye esta documentación sobre la estructura, vulnerabilidades y exploits existentes en el SDCE, esta documentación se realizó de manera informal y con fines personales mediante notas digitales usando la aplicación de __Notion__.
 
+> [!NOTE]
 > Notion es un software de gestión de proyectos y para tomar notas. Está diseñado para ayudar a los miembros de una empresa u organización a corto plazos, objetivos y tareas en áreas de la eficiencia y la productividad.
 
 La documentación en Notion incluye notas sobre aspectos relevantes del SDCE:
@@ -80,7 +81,7 @@ La documentación en Notion incluye notas sobre aspectos relevantes del SDCE:
     * Modificación de Datos Personales y Académicos
     * Forzar Accesos No Autorizados
 
-[La documentación de las vulnerabilidades mencionadas esta disponible en este enlace.]()
+[La documentación de las vulnerabilidades mencionadas esta disponible en este enlace.](https://www.notion.so/UAEM-x-164abd56f0c0809a9acded7cd86e7a50?pvs=4)
 
 ## Autor
 

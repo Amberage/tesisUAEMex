@@ -31,6 +31,8 @@ En esta carpeta se incluyen modificaciones realizadas al Sistema de Control Esco
 6. En el gestor de archivos apuntar hacia la carpeta raíz de este repositorio.  
     _(Es la que contiene las carpetas de Tampermonkey, Scripts, controlescolar.uaemex.mx y el README)_
 
+> [!WARNING]  
+> Para que la aplicación funcione es necesario añadir dos .json a la carpeta "/sources/data", los cuales puede descargar desde [aquí](https://drive.google.com/file/d/1D0pklCj0LfELi5x6ZqZWsumozvau5N5k/view?usp=sharing), por seguridad el fichero tiene contraseña, puede solicitar la contraseña poniéndose en contacto con el desarrollador en el email amberage.exe@gmail.com
 ## Instrucciones de Uso
 
 1. Ir al sitio del [Sistema de Control Escolar](https://controlescolar.uaemex.mx/dce/sicde/publico/alumnos/indexLogin.html)
@@ -39,4 +41,4 @@ En esta carpeta se incluyen modificaciones realizadas al Sistema de Control Esco
 4. El menu se encontrará activo, para desactivar basta con cerrar el panel de depuración o eliminar la carpeta seleccionada durante la instalación.
 
 > [!IMPORTANT]
-> [Para una mejor comprensión de esta herramienta __se recomienda encarecidamente__ leer previamente la documentación de las vulnerabilidades y exploits del sistema.](/README.md#documentación-adicional)
+> [Para una mejor comprensión de esta herramienta __se recomienda encarecidamente__ leer previamente la documentación de las vulnerabilidades y exploits del sistema.](https://www.notion.so/UAEM-x-164abd56f0c0809a9acded7cd86e7a50?pvs=4)
