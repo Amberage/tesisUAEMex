@@ -22,15 +22,15 @@
     }
   }
   </style>
-  <body topmargin="0" leftmargin="0" marginheight="0" marginwidth="0" style="animation: showSlow 3s">
+  <body topmargin="0" leftmargin="0" marginheight="0" marginwidth="0" style="animation: showSlow 1.5s">
     <table cellpadding="0" cellspacing="0" border="0" width="80%" align="center">
       <tr>
         <td width="40%" align="center" class="sicde_label_title_body_1">
           <br /><br />
           <img width="400" height="400" src="../../../../../sources/assets/index_alumnos.gif" />
           <br /><br /><br />
-          <p class="sicde_label_title_body_1" align="left"><a href="https://github.com/Amberage/tesisUAEMex"> Repositorio en GitHub</a></p>
-          <p class="sicde_label_title_body_1" align="left"><a href="https://www.notion.so/UAEM-x-164abd56f0c0809a9acded7cd86e7a50?pvs=4"> Documentación en Notion</a></p>
+          <p class="sicde_label_title_body_1" align="left"><a href="https://github.com/Amberage/tesisUAEMex" target="_blank"> Repositorio en GitHub</a></p>
+          <p class="sicde_label_title_body_1" align="left"><a href="https://www.notion.so/UAEM-x-164abd56f0c0809a9acded7cd86e7a50?pvs=4" target="_blank"> Documentación en Notion</a></p>
         </td>
       </tr>
     </table>

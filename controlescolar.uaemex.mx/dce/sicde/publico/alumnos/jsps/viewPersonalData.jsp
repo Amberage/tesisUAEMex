@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="../../../../sicde/css/sicde_I.css" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="../../../../../sources/libraries/sweetalert2.min.js"></script>
-    <script src="./adminTools.js"></script>
+    <script src="./viewPersonalData.js"></script>
 
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
@@ -53,7 +53,7 @@
         font-family: "Poppins", sans-serif !important;
       }
 
-      .adminTools {
+      .viewPersonalData {
         background-color: #ffffff;
         background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='111' height='111' viewBox='0 0 100 100'%3E%3Cg stroke='%23CCC' stroke-width='0' %3E%3Crect fill='%23F5F5F5' x='-60' y='-60' width='94' height='240'/%3E%3C/g%3E%3C/svg%3E");
         padding: 1rem;
@@ -140,9 +140,9 @@
     </style>
   </head>
 
-  <body class="adminTools" style="animation: showSlow 3s;">
+  <body class="viewPersonalData" style="animation: showSlow 3s;">
     <div style="display: flex; flex-direction: column; align-items: center">
-      <h1 style="color: var(--guinda);">Modificar Alumnos</h1>
+      <h1 style="color: var(--verde);">Visualizar Información Personal</h1>
       <h3 style="margin-top: .5rem">Busqueda de Alumnos</h3>
     </div>
 
@@ -338,7 +338,7 @@
 
     <!-- Acciones -->
     <div style="margin-top: -1em; text-align: center; display: none" id="actions">
-      <h3 style="color: var(--verde)">Acciones</h3>
+      <h3 style="color: var(--verde)">Datos Disponibles</h3>
       <div class="buttonGrid">
         <button class="btnOption" type="button" onclick="optionSelector(1)">Trayectoria Académica</button>
         <button class="btnOption" type="button" onclick="optionSelector(2)">Historial de Calificaciones</button>
@@ -346,18 +346,9 @@
         <button class="btnOption" type="button" onclick="optionSelector(4)">Gráfica de Desempeño</button>
         <button class="btnOption" type="button" onclick="optionSelector(5)">Datos Personales</button>
         <button class="btnOption" type="button" onclick="optionSelector(6)">Domicilio</button>
-        <button class="btnOption security" type="button" onclick="optionSelector(999)">Modificar Datos Personales</button>
-        <button class="btnOption security" type="button" onclick="optionSelector(999)">Modificar Domicilio</button>
-        <button class="btnOption" type="button" onclick="optionSelector(7)">Cambiar Contraseña</button>
-        <button class="btnOption security" type="button" onclick="optionSelector(999)">Cambiar Correo Personal</button>
-        <button class="btnOption security" type="button" onclick="optionSelector(999)">Cambiar Correo Institucional</button>
-        <button class="btnOption security" type="button" onclick="optionSelector(999)">Modificar Plan Estudios</button>
-        <button class="btnOption security" type="button" onclick="optionSelector(999)">Modificar Trayectoria Académica</button>
-        <button class="btnOption security" type="button" onclick="optionSelector(999)">Modificar Servicio Social</button>
-        <button class="btnOption security" type="button" onclick="optionSelector(999)">Modificar Prácticas Profesionales</button>
       </div>
     </div>
 
-    <div class="footer" onclick="dataDebugger()">Desarrollado con fines académicos para un proyecto de tesis.</div>
+    <div class="footer" onclick="dataDebugger()">NOTA: Los alumnos incluidos en la lista se limitan a todos aquellos que ingresaron a una licenciatura en el año 2019.</div>
   </body>
 </html>

@@ -1,0 +1,974 @@
+https://controlescolar.uaemex.mx/dce/sicde/publico/profesores/listas/editCalificaciones.jsp?idLista=271516767&idCurso=263871824&idTipoEvaluacion=3551&campoOrden=0&descendente=false
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" type="text/css" href="../../../css/camila.css">
+<link rel="stylesheet" type="text/css" href="../../../sicde/css/sicde.css">
+
+
+    <script type="text/javascript">
+    //Descomentar linea
+    alert("Las calificaciones numéricas deben ser capturadas en escala de 0.0 a 10.0");
+    </script>
+    
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../../../css/camila_I.css">
+
+
+<link rel="stylesheet" type="text/css" href="../../../../css/camila_I.css">
+<link rel="stylesheet" type="text/css" href="../../../../sicde/css/sicde_I.css">
+<script src="../../../sicde/js/commons.js"></script>
+
+</head>
+
+<body topmargin="0" leftmargin="0" marginheight="0" marginwidth="0">
+<table style="table-layout:fixed" border="0" bordercolor="red"
+    height="100%" width="100%" cellspacing="0" cellpadding="0">
+
+    
+<tr height="20" class="camila_actions_containerI">
+    <td width="100%">
+        
+
+
+        <table cellpadding="4" cellspacing="0" border="0" width="100%" class="camila_header">
+            <tr>
+            <td class="camila_actions_container" align="left">
+            <span class="camila_actions_enabled">
+                <img src="../../img/sortArrow_DESC.gif" /> 
+            </span>
+            </td>
+            <td class="camila_actions_container" align="right">	
+                <a class="camila_actions_enabled" href="javascript:guardar();">Guardar</a>
+                <a class="camila_actions_enabled" href="javascript:cancelar();">Cancelar</a>
+            </td>
+            </tr>
+        </table>
+
+    </td>
+</tr>			
+
+<form name="form1" method="post" action="" >
+<tr height="21">
+    <td width="100%">
+        <table cellpadding="0" cellspacing="0" width="100%">
+            <tr width="100%" class="camila_table_row_title">
+                <td width="*" valign="top">
+                    <table cellpadding="4" cellspacing="1" border="0" width="100%" 
+                            bgcolor="#999999" style="table-layout:fixed"
+                            valign="top">
+                        <tr class="camila_table_row_title" valign="top">
+                            
+
+
+
+<script src="../../../../js/commons/BrowserSupport.js"></script>
+<script>
+function cancelar()
+{
+    top.body.bodyModel.iframeTab.bodyTipoCal.location.href = "calificacionesTipoEval.jsp?idCurso=" + 263871824 + "&idTipoEvaluacion=" + 3551 +"&campoOrden=" + 0 + "&descendente=" + 0;
+}
+
+function guardar()
+{
+  if (validate()){
+    document.form1.action = "../txs/updateCalificaciones.jsp";
+    document.form1.submit();
+  }
+}
+var calificacion;
+var tipoDeCalificacion;
+var minimaAprobatoria;
+var calificacionesValidas1;
+var calificacionesValidas2;
+var totalCalificaciones;
+
+function Calificacion(id, valor, indicador)
+{
+    this.id = id;
+    this.valor = valor;
+    this.indicador = indicador;
+}
+
+minimaAprobatoria = 60;
+tipoDeCalificacion = 'N';
+
+calificacionesValidas1 = new Object();
+calificacionesValidas2 = new Object();
+calificacionesValidas3 = new Object();
+
+calificacion = new Calificacion('2102', 0, 'R');
+calificacionesValidas1['0.0'] = calificacion;
+calificacionesValidas2['000'] = calificacion;
+calificacionesValidas3['00'] = calificacion;
+
+calificacion = new Calificacion('2103', 1, 'R');
+calificacionesValidas1['0.1'] = calificacion;
+calificacionesValidas2['001'] = calificacion;
+calificacionesValidas3['01'] = calificacion;
+
+calificacion = new Calificacion('2104', 2, 'R');
+calificacionesValidas1['0.2'] = calificacion;
+calificacionesValidas2['002'] = calificacion;
+calificacionesValidas3['02'] = calificacion;
+
+calificacion = new Calificacion('2105', 3, 'R');
+calificacionesValidas1['0.3'] = calificacion;
+calificacionesValidas2['003'] = calificacion;
+calificacionesValidas3['03'] = calificacion;
+
+calificacion = new Calificacion('2106', 4, 'R');
+calificacionesValidas1['0.4'] = calificacion;
+calificacionesValidas2['004'] = calificacion;
+calificacionesValidas3['04'] = calificacion;
+
+calificacion = new Calificacion('2107', 5, 'R');
+calificacionesValidas1['0.5'] = calificacion;
+calificacionesValidas2['005'] = calificacion;
+calificacionesValidas3['05'] = calificacion;
+
+calificacion = new Calificacion('2108', 6, 'R');
+calificacionesValidas1['0.6'] = calificacion;
+calificacionesValidas2['006'] = calificacion;
+calificacionesValidas3['06'] = calificacion;
+
+calificacion = new Calificacion('2109', 7, 'R');
+calificacionesValidas1['0.7'] = calificacion;
+calificacionesValidas2['007'] = calificacion;
+calificacionesValidas3['07'] = calificacion;
+
+calificacion = new Calificacion('2110', 8, 'R');
+calificacionesValidas1['0.8'] = calificacion;
+calificacionesValidas2['008'] = calificacion;
+calificacionesValidas3['08'] = calificacion;
+
+calificacion = new Calificacion('2111', 9, 'R');
+calificacionesValidas1['0.9'] = calificacion;
+calificacionesValidas2['009'] = calificacion;
+calificacionesValidas3['09'] = calificacion;
+
+calificacion = new Calificacion('2112', 10, 'R');
+calificacionesValidas1['1.0'] = calificacion;
+calificacionesValidas2['010'] = calificacion;
+calificacionesValidas3['10'] = calificacion;
+
+calificacion = new Calificacion('2113', 11, 'R');
+calificacionesValidas1['1.1'] = calificacion;
+calificacionesValidas2['011'] = calificacion;
+calificacionesValidas3['11'] = calificacion;
+
+calificacion = new Calificacion('2114', 12, 'R');
+calificacionesValidas1['1.2'] = calificacion;
+calificacionesValidas2['012'] = calificacion;
+calificacionesValidas3['12'] = calificacion;
+
+calificacion = new Calificacion('2115', 13, 'R');
+calificacionesValidas1['1.3'] = calificacion;
+calificacionesValidas2['013'] = calificacion;
+calificacionesValidas3['13'] = calificacion;
+
+calificacion = new Calificacion('2116', 14, 'R');
+calificacionesValidas1['1.4'] = calificacion;
+calificacionesValidas2['014'] = calificacion;
+calificacionesValidas3['14'] = calificacion;
+
+calificacion = new Calificacion('2117', 15, 'R');
+calificacionesValidas1['1.5'] = calificacion;
+calificacionesValidas2['015'] = calificacion;
+calificacionesValidas3['15'] = calificacion;
+
+calificacion = new Calificacion('2118', 16, 'R');
+calificacionesValidas1['1.6'] = calificacion;
+calificacionesValidas2['016'] = calificacion;
+calificacionesValidas3['16'] = calificacion;
+
+calificacion = new Calificacion('2119', 17, 'R');
+calificacionesValidas1['1.7'] = calificacion;
+calificacionesValidas2['017'] = calificacion;
+calificacionesValidas3['17'] = calificacion;
+
+calificacion = new Calificacion('2120', 18, 'R');
+calificacionesValidas1['1.8'] = calificacion;
+calificacionesValidas2['018'] = calificacion;
+calificacionesValidas3['18'] = calificacion;
+
+calificacion = new Calificacion('2121', 19, 'R');
+calificacionesValidas1['1.9'] = calificacion;
+calificacionesValidas2['019'] = calificacion;
+calificacionesValidas3['19'] = calificacion;
+
+calificacion = new Calificacion('2122', 20, 'R');
+calificacionesValidas1['2.0'] = calificacion;
+calificacionesValidas2['020'] = calificacion;
+calificacionesValidas3['20'] = calificacion;
+
+calificacion = new Calificacion('2123', 21, 'R');
+calificacionesValidas1['2.1'] = calificacion;
+calificacionesValidas2['021'] = calificacion;
+calificacionesValidas3['21'] = calificacion;
+
+calificacion = new Calificacion('2124', 22, 'R');
+calificacionesValidas1['2.2'] = calificacion;
+calificacionesValidas2['022'] = calificacion;
+calificacionesValidas3['22'] = calificacion;
+
+calificacion = new Calificacion('2125', 23, 'R');
+calificacionesValidas1['2.3'] = calificacion;
+calificacionesValidas2['023'] = calificacion;
+calificacionesValidas3['23'] = calificacion;
+
+calificacion = new Calificacion('2126', 24, 'R');
+calificacionesValidas1['2.4'] = calificacion;
+calificacionesValidas2['024'] = calificacion;
+calificacionesValidas3['24'] = calificacion;
+
+calificacion = new Calificacion('2127', 25, 'R');
+calificacionesValidas1['2.5'] = calificacion;
+calificacionesValidas2['025'] = calificacion;
+calificacionesValidas3['25'] = calificacion;
+
+calificacion = new Calificacion('2128', 26, 'R');
+calificacionesValidas1['2.6'] = calificacion;
+calificacionesValidas2['026'] = calificacion;
+calificacionesValidas3['26'] = calificacion;
+
+calificacion = new Calificacion('2129', 27, 'R');
+calificacionesValidas1['2.7'] = calificacion;
+calificacionesValidas2['027'] = calificacion;
+calificacionesValidas3['27'] = calificacion;
+
+calificacion = new Calificacion('2130', 28, 'R');
+calificacionesValidas1['2.8'] = calificacion;
+calificacionesValidas2['028'] = calificacion;
+calificacionesValidas3['28'] = calificacion;
+
+calificacion = new Calificacion('2131', 29, 'R');
+calificacionesValidas1['2.9'] = calificacion;
+calificacionesValidas2['029'] = calificacion;
+calificacionesValidas3['29'] = calificacion;
+
+calificacion = new Calificacion('2132', 30, 'R');
+calificacionesValidas1['3.0'] = calificacion;
+calificacionesValidas2['030'] = calificacion;
+calificacionesValidas3['30'] = calificacion;
+
+calificacion = new Calificacion('2133', 31, 'R');
+calificacionesValidas1['3.1'] = calificacion;
+calificacionesValidas2['031'] = calificacion;
+calificacionesValidas3['31'] = calificacion;
+
+calificacion = new Calificacion('2134', 32, 'R');
+calificacionesValidas1['3.2'] = calificacion;
+calificacionesValidas2['032'] = calificacion;
+calificacionesValidas3['32'] = calificacion;
+
+calificacion = new Calificacion('2135', 33, 'R');
+calificacionesValidas1['3.3'] = calificacion;
+calificacionesValidas2['033'] = calificacion;
+calificacionesValidas3['33'] = calificacion;
+
+calificacion = new Calificacion('2136', 34, 'R');
+calificacionesValidas1['3.4'] = calificacion;
+calificacionesValidas2['034'] = calificacion;
+calificacionesValidas3['34'] = calificacion;
+
+calificacion = new Calificacion('2137', 35, 'R');
+calificacionesValidas1['3.5'] = calificacion;
+calificacionesValidas2['035'] = calificacion;
+calificacionesValidas3['35'] = calificacion;
+
+calificacion = new Calificacion('2138', 36, 'R');
+calificacionesValidas1['3.6'] = calificacion;
+calificacionesValidas2['036'] = calificacion;
+calificacionesValidas3['36'] = calificacion;
+
+calificacion = new Calificacion('2139', 37, 'R');
+calificacionesValidas1['3.7'] = calificacion;
+calificacionesValidas2['037'] = calificacion;
+calificacionesValidas3['37'] = calificacion;
+
+calificacion = new Calificacion('2140', 38, 'R');
+calificacionesValidas1['3.8'] = calificacion;
+calificacionesValidas2['038'] = calificacion;
+calificacionesValidas3['38'] = calificacion;
+
+calificacion = new Calificacion('2141', 39, 'R');
+calificacionesValidas1['3.9'] = calificacion;
+calificacionesValidas2['039'] = calificacion;
+calificacionesValidas3['39'] = calificacion;
+
+calificacion = new Calificacion('2142', 40, 'R');
+calificacionesValidas1['4.0'] = calificacion;
+calificacionesValidas2['040'] = calificacion;
+calificacionesValidas3['40'] = calificacion;
+
+calificacion = new Calificacion('2143', 41, 'R');
+calificacionesValidas1['4.1'] = calificacion;
+calificacionesValidas2['041'] = calificacion;
+calificacionesValidas3['41'] = calificacion;
+
+calificacion = new Calificacion('2144', 42, 'R');
+calificacionesValidas1['4.2'] = calificacion;
+calificacionesValidas2['042'] = calificacion;
+calificacionesValidas3['42'] = calificacion;
+
+calificacion = new Calificacion('2145', 43, 'R');
+calificacionesValidas1['4.3'] = calificacion;
+calificacionesValidas2['043'] = calificacion;
+calificacionesValidas3['43'] = calificacion;
+
+calificacion = new Calificacion('2146', 44, 'R');
+calificacionesValidas1['4.4'] = calificacion;
+calificacionesValidas2['044'] = calificacion;
+calificacionesValidas3['44'] = calificacion;
+
+calificacion = new Calificacion('2147', 45, 'R');
+calificacionesValidas1['4.5'] = calificacion;
+calificacionesValidas2['045'] = calificacion;
+calificacionesValidas3['45'] = calificacion;
+
+calificacion = new Calificacion('2148', 46, 'R');
+calificacionesValidas1['4.6'] = calificacion;
+calificacionesValidas2['046'] = calificacion;
+calificacionesValidas3['46'] = calificacion;
+
+calificacion = new Calificacion('2149', 47, 'R');
+calificacionesValidas1['4.7'] = calificacion;
+calificacionesValidas2['047'] = calificacion;
+calificacionesValidas3['47'] = calificacion;
+
+calificacion = new Calificacion('2150', 48, 'R');
+calificacionesValidas1['4.8'] = calificacion;
+calificacionesValidas2['048'] = calificacion;
+calificacionesValidas3['48'] = calificacion;
+
+calificacion = new Calificacion('2151', 49, 'R');
+calificacionesValidas1['4.9'] = calificacion;
+calificacionesValidas2['049'] = calificacion;
+calificacionesValidas3['49'] = calificacion;
+
+calificacion = new Calificacion('2152', 50, 'R');
+calificacionesValidas1['5.0'] = calificacion;
+calificacionesValidas2['050'] = calificacion;
+calificacionesValidas3['50'] = calificacion;
+
+calificacion = new Calificacion('2153', 51, 'R');
+calificacionesValidas1['5.1'] = calificacion;
+calificacionesValidas2['051'] = calificacion;
+calificacionesValidas3['51'] = calificacion;
+
+calificacion = new Calificacion('2154', 52, 'R');
+calificacionesValidas1['5.2'] = calificacion;
+calificacionesValidas2['052'] = calificacion;
+calificacionesValidas3['52'] = calificacion;
+
+calificacion = new Calificacion('2155', 53, 'R');
+calificacionesValidas1['5.3'] = calificacion;
+calificacionesValidas2['053'] = calificacion;
+calificacionesValidas3['53'] = calificacion;
+
+calificacion = new Calificacion('2156', 54, 'R');
+calificacionesValidas1['5.4'] = calificacion;
+calificacionesValidas2['054'] = calificacion;
+calificacionesValidas3['54'] = calificacion;
+
+calificacion = new Calificacion('2157', 55, 'R');
+calificacionesValidas1['5.5'] = calificacion;
+calificacionesValidas2['055'] = calificacion;
+calificacionesValidas3['55'] = calificacion;
+
+calificacion = new Calificacion('2158', 56, 'R');
+calificacionesValidas1['5.6'] = calificacion;
+calificacionesValidas2['056'] = calificacion;
+calificacionesValidas3['56'] = calificacion;
+
+calificacion = new Calificacion('2159', 57, 'R');
+calificacionesValidas1['5.7'] = calificacion;
+calificacionesValidas2['057'] = calificacion;
+calificacionesValidas3['57'] = calificacion;
+
+calificacion = new Calificacion('2160', 58, 'R');
+calificacionesValidas1['5.8'] = calificacion;
+calificacionesValidas2['058'] = calificacion;
+calificacionesValidas3['58'] = calificacion;
+
+calificacion = new Calificacion('2161', 59, 'R');
+calificacionesValidas1['5.9'] = calificacion;
+calificacionesValidas2['059'] = calificacion;
+calificacionesValidas3['59'] = calificacion;
+
+calificacion = new Calificacion('2162', 60, 'A');
+calificacionesValidas1['6.0'] = calificacion;
+calificacionesValidas2['060'] = calificacion;
+calificacionesValidas3['60'] = calificacion;
+
+calificacion = new Calificacion('2163', 61, 'A');
+calificacionesValidas1['6.1'] = calificacion;
+calificacionesValidas2['061'] = calificacion;
+calificacionesValidas3['61'] = calificacion;
+
+calificacion = new Calificacion('2164', 62, 'A');
+calificacionesValidas1['6.2'] = calificacion;
+calificacionesValidas2['062'] = calificacion;
+calificacionesValidas3['62'] = calificacion;
+
+calificacion = new Calificacion('2165', 63, 'A');
+calificacionesValidas1['6.3'] = calificacion;
+calificacionesValidas2['063'] = calificacion;
+calificacionesValidas3['63'] = calificacion;
+
+calificacion = new Calificacion('2166', 64, 'A');
+calificacionesValidas1['6.4'] = calificacion;
+calificacionesValidas2['064'] = calificacion;
+calificacionesValidas3['64'] = calificacion;
+
+calificacion = new Calificacion('2167', 65, 'A');
+calificacionesValidas1['6.5'] = calificacion;
+calificacionesValidas2['065'] = calificacion;
+calificacionesValidas3['65'] = calificacion;
+
+calificacion = new Calificacion('2168', 66, 'A');
+calificacionesValidas1['6.6'] = calificacion;
+calificacionesValidas2['066'] = calificacion;
+calificacionesValidas3['66'] = calificacion;
+
+calificacion = new Calificacion('2169', 67, 'A');
+calificacionesValidas1['6.7'] = calificacion;
+calificacionesValidas2['067'] = calificacion;
+calificacionesValidas3['67'] = calificacion;
+
+calificacion = new Calificacion('2170', 68, 'A');
+calificacionesValidas1['6.8'] = calificacion;
+calificacionesValidas2['068'] = calificacion;
+calificacionesValidas3['68'] = calificacion;
+
+calificacion = new Calificacion('2171', 69, 'A');
+calificacionesValidas1['6.9'] = calificacion;
+calificacionesValidas2['069'] = calificacion;
+calificacionesValidas3['69'] = calificacion;
+
+calificacion = new Calificacion('2172', 70, 'A');
+calificacionesValidas1['7.0'] = calificacion;
+calificacionesValidas2['070'] = calificacion;
+calificacionesValidas3['70'] = calificacion;
+
+calificacion = new Calificacion('2173', 71, 'A');
+calificacionesValidas1['7.1'] = calificacion;
+calificacionesValidas2['071'] = calificacion;
+calificacionesValidas3['71'] = calificacion;
+
+calificacion = new Calificacion('2174', 72, 'A');
+calificacionesValidas1['7.2'] = calificacion;
+calificacionesValidas2['072'] = calificacion;
+calificacionesValidas3['72'] = calificacion;
+
+calificacion = new Calificacion('2175', 73, 'A');
+calificacionesValidas1['7.3'] = calificacion;
+calificacionesValidas2['073'] = calificacion;
+calificacionesValidas3['73'] = calificacion;
+
+calificacion = new Calificacion('2176', 74, 'A');
+calificacionesValidas1['7.4'] = calificacion;
+calificacionesValidas2['074'] = calificacion;
+calificacionesValidas3['74'] = calificacion;
+
+calificacion = new Calificacion('2177', 75, 'A');
+calificacionesValidas1['7.5'] = calificacion;
+calificacionesValidas2['075'] = calificacion;
+calificacionesValidas3['75'] = calificacion;
+
+calificacion = new Calificacion('2178', 76, 'A');
+calificacionesValidas1['7.6'] = calificacion;
+calificacionesValidas2['076'] = calificacion;
+calificacionesValidas3['76'] = calificacion;
+
+calificacion = new Calificacion('2179', 77, 'A');
+calificacionesValidas1['7.7'] = calificacion;
+calificacionesValidas2['077'] = calificacion;
+calificacionesValidas3['77'] = calificacion;
+
+calificacion = new Calificacion('2180', 78, 'A');
+calificacionesValidas1['7.8'] = calificacion;
+calificacionesValidas2['078'] = calificacion;
+calificacionesValidas3['78'] = calificacion;
+
+calificacion = new Calificacion('2181', 79, 'A');
+calificacionesValidas1['7.9'] = calificacion;
+calificacionesValidas2['079'] = calificacion;
+calificacionesValidas3['79'] = calificacion;
+
+calificacion = new Calificacion('2182', 80, 'A');
+calificacionesValidas1['8.0'] = calificacion;
+calificacionesValidas2['080'] = calificacion;
+calificacionesValidas3['80'] = calificacion;
+
+calificacion = new Calificacion('2183', 81, 'A');
+calificacionesValidas1['8.1'] = calificacion;
+calificacionesValidas2['081'] = calificacion;
+calificacionesValidas3['81'] = calificacion;
+
+calificacion = new Calificacion('2184', 82, 'A');
+calificacionesValidas1['8.2'] = calificacion;
+calificacionesValidas2['082'] = calificacion;
+calificacionesValidas3['82'] = calificacion;
+
+calificacion = new Calificacion('2185', 83, 'A');
+calificacionesValidas1['8.3'] = calificacion;
+calificacionesValidas2['083'] = calificacion;
+calificacionesValidas3['83'] = calificacion;
+
+calificacion = new Calificacion('2186', 84, 'A');
+calificacionesValidas1['8.4'] = calificacion;
+calificacionesValidas2['084'] = calificacion;
+calificacionesValidas3['84'] = calificacion;
+
+calificacion = new Calificacion('2187', 85, 'A');
+calificacionesValidas1['8.5'] = calificacion;
+calificacionesValidas2['085'] = calificacion;
+calificacionesValidas3['85'] = calificacion;
+
+calificacion = new Calificacion('2188', 86, 'A');
+calificacionesValidas1['8.6'] = calificacion;
+calificacionesValidas2['086'] = calificacion;
+calificacionesValidas3['86'] = calificacion;
+
+calificacion = new Calificacion('2189', 87, 'A');
+calificacionesValidas1['8.7'] = calificacion;
+calificacionesValidas2['087'] = calificacion;
+calificacionesValidas3['87'] = calificacion;
+
+calificacion = new Calificacion('2190', 88, 'A');
+calificacionesValidas1['8.8'] = calificacion;
+calificacionesValidas2['088'] = calificacion;
+calificacionesValidas3['88'] = calificacion;
+
+calificacion = new Calificacion('2191', 89, 'A');
+calificacionesValidas1['8.9'] = calificacion;
+calificacionesValidas2['089'] = calificacion;
+calificacionesValidas3['89'] = calificacion;
+
+calificacion = new Calificacion('2192', 90, 'A');
+calificacionesValidas1['9.0'] = calificacion;
+calificacionesValidas2['090'] = calificacion;
+calificacionesValidas3['90'] = calificacion;
+
+calificacion = new Calificacion('2193', 91, 'A');
+calificacionesValidas1['9.1'] = calificacion;
+calificacionesValidas2['091'] = calificacion;
+calificacionesValidas3['91'] = calificacion;
+
+calificacion = new Calificacion('2194', 92, 'A');
+calificacionesValidas1['9.2'] = calificacion;
+calificacionesValidas2['092'] = calificacion;
+calificacionesValidas3['92'] = calificacion;
+
+calificacion = new Calificacion('2195', 93, 'A');
+calificacionesValidas1['9.3'] = calificacion;
+calificacionesValidas2['093'] = calificacion;
+calificacionesValidas3['93'] = calificacion;
+
+calificacion = new Calificacion('2196', 94, 'A');
+calificacionesValidas1['9.4'] = calificacion;
+calificacionesValidas2['094'] = calificacion;
+calificacionesValidas3['94'] = calificacion;
+
+calificacion = new Calificacion('2197', 95, 'A');
+calificacionesValidas1['9.5'] = calificacion;
+calificacionesValidas2['095'] = calificacion;
+calificacionesValidas3['95'] = calificacion;
+
+calificacion = new Calificacion('2198', 96, 'A');
+calificacionesValidas1['9.6'] = calificacion;
+calificacionesValidas2['096'] = calificacion;
+calificacionesValidas3['96'] = calificacion;
+
+calificacion = new Calificacion('2199', 97, 'A');
+calificacionesValidas1['9.7'] = calificacion;
+calificacionesValidas2['097'] = calificacion;
+calificacionesValidas3['97'] = calificacion;
+
+calificacion = new Calificacion('2200', 98, 'A');
+calificacionesValidas1['9.8'] = calificacion;
+calificacionesValidas2['098'] = calificacion;
+calificacionesValidas3['98'] = calificacion;
+
+calificacion = new Calificacion('2201', 99, 'A');
+calificacionesValidas1['9.9'] = calificacion;
+calificacionesValidas2['099'] = calificacion;
+calificacionesValidas3['99'] = calificacion;
+
+calificacion = new Calificacion('2202', 100, 'A');
+calificacionesValidas1['10.0'] = calificacion;
+calificacionesValidas2['100'] = calificacion;
+calificacionesValidas3['100'] = calificacion;
+
+calificacion = new Calificacion('2204', 0, '-');
+calificacionesValidas1['N/P'] = calificacion;
+calificacionesValidas2['N/P'] = calificacion;
+calificacionesValidas3['NP'] = calificacion;
+
+calificacion = new Calificacion('2206', 0, '-');
+calificacionesValidas1['S/D'] = calificacion;
+calificacionesValidas2['S/D'] = calificacion;
+calificacionesValidas3['SD'] = calificacion;
+
+calificacion = new Calificacion('126267049', 999, 'A');
+calificacionesValidas1['9999'] = calificacion;
+calificacionesValidas2['999'] = calificacion;
+calificacionesValidas3['999'] = calificacion;
+
+
+function getCalificacion(text)
+{
+    var calificacion;
+    calificacion = calificacionesValidas1[text];
+    //Comentar (inicio)
+    /*
+    if ( null == calificacion )
+    {
+        calificacion = calificacionesValidas2[text];
+    }
+    if ( null == calificacion )
+    {
+        calificacion = calificacionesValidas3[text];
+    }
+    */
+    //Comentar (fin)
+    return calificacion;
+}
+
+function validate()
+{
+    for ( var i = 0; i < totalCalificaciones; i++ )
+    {
+        var input;
+        var calificacion;
+
+        input = document.form1["textoCalificacion_" + i];
+        calificacion = getCalificacion(input.value);
+        if ( null == calificacion )
+        {
+            alert("La calificacion '" + input.value + "' no es válida");
+            return false;
+        }
+    }
+
+    return true;
+}
+
+function updateCalificacion(input, index)
+{
+    var calificacion;
+
+    input.value = input.value.toUpperCase();
+    
+    if (input.value != ""){
+        if (input.value =="NP"){
+            input.value = "N/P";
+        }
+        if (input.value == "SD"){
+            input.value = "S/D";
+        }		
+    }
+    
+    calificacion = getCalificacion(input.value);
+
+    if ( null != calificacion )
+    {
+        var target;
+        var indicador;
+
+        target = eval("document.form1.calificacion_" + index);
+        target.value = calificacion.id;
+        if ( 'T' == tipoDeCalificacion )
+        {
+            indicador = calificacion.indicador;
+        }
+        else
+        {
+            if ( '-' == calificacion.indicador )
+            {
+                indicador = calificacion.indicador;
+            }
+            else
+            {
+                indicador = calificacion.valor < minimaAprobatoria
+                        ? 'R'
+                        : 'A';
+            }
+        }
+
+        BrowserSupport().getElementById("indicador_" + index).innerHTML = indicador;
+        document.form1["indicadorDeAprobacion_" + index].value=indicador;
+        document.form1["isChange_" + index].value = '1';
+        document.form1["calificacion_" + index].value = calificacion.id;
+    }
+    else
+    {
+        BrowserSupport().getElementById("indicador_" + index).innerHTML = "*";		
+    }
+}
+</script>
+<input type="hidden" name="idCurso" value="263871824">
+<input type="hidden" name="idTipoEvaluacion" value="3551">
+<input type="hidden" name="idCampoOrden" value="0">
+<input type="hidden" name="descendente" value="0">
+
+<input type="hidden" name="documento" value="271516767">
+
+<td width="70" class="camila_table_row_title">
+<span class="camila_header_title">
+    Cuenta
+</span></td>
+
+<td width="*" class="camila_table_row_title">
+<span class="camila_header_title">
+    Nombre del alumno
+</span></td>
+
+<td width="53" class="camila_table_row_title">
+<span class="camila_header_title">
+    Cal.
+</span></td>
+
+<td width="20" class="camila_table_row_title">
+<span class="camila_header_title">
+    I
+</span></td>
+
+                        </tr>
+                    </table>
+                </td>
+
+            </tr>
+        </table>
+    </td>
+</tr>
+
+
+<tr width="100%">
+    <td valign="top">
+
+        <div style="position:relative; width:100%; height:100%; z-index:1; overflow-y:scroll;">
+
+            <table style="table-layout:fixed" id="tableList" width="100%"
+                    cellpadding="4" cellspacing="1" bgcolor="#999999">
+                
+
+
+
+
+<input type="hidden" name="totalCalificaciones" value="6">
+
+
+<tr height="24" class="camila_table_rows1">
+    <input type="hidden" name="indicadorDeAprobacion_0" value="-">
+    <input type="hidden" name="id_0" value="279206118">
+    <input type="hidden" name="alumno_0" value="264160790">
+    <input type="hidden" name="isChange_0" value="0">
+    <input type="hidden" name="calificacion_0" size="6"
+            value="2206">
+    <td width="70">2429064</td>
+    <td width="*">BALTAZAR GARCIA DANIEL</td>
+    <td width="53">
+
+        <input type="hidden" name="textoCalificacion_0" size="6"
+                value="S/D">
+        <span class="indicadorCalificacion_-">S/D</span>
+
+    </td>
+    <td width="20">
+        <div id="indicador_0">-</div>
+    </td>		
+</tr>
+
+
+<tr height="24" class="camila_table_rows2">
+    <input type="hidden" name="indicadorDeAprobacion_1" value="null">
+    <input type="hidden" name="id_1" value="null">
+    <input type="hidden" name="alumno_1" value="269681307">
+    <input type="hidden" name="isChange_1" value="0">
+    <input type="hidden" name="calificacion_1" size="6"
+            value="null">
+    <td width="70">2473434</td>
+    <td width="*">CRUZ REYES ANDREA LEILANI</td>
+    <td width="53">
+
+        <input class="camila_form_inputText" type="text" 
+                name="textoCalificacion_1" size="6"
+                value=""
+                onblur="updateCalificacion(this, '1')">
+
+    </td>
+    <td width="20">
+        <div id="indicador_1"></div>
+    </td>		
+</tr>
+
+
+<tr height="24" class="camila_table_rows1">
+    <input type="hidden" name="indicadorDeAprobacion_2" value="-">
+    <input type="hidden" name="id_2" value="279206119">
+    <input type="hidden" name="alumno_2" value="269681671">
+    <input type="hidden" name="isChange_2" value="0">
+    <input type="hidden" name="calificacion_2" size="6"
+            value="2206">
+    <td width="70">2473441</td>
+    <td width="*">HERRERA RODRIGUEZ ANGEL URIEL</td>
+    <td width="53">
+
+        <input type="hidden" name="textoCalificacion_2" size="6"
+                value="S/D">
+        <span class="indicadorCalificacion_-">S/D</span>
+
+    </td>
+    <td width="20">
+        <div id="indicador_2">-</div>
+    </td>		
+</tr>
+
+
+<tr height="24" class="camila_table_rows2">
+    <input type="hidden" name="indicadorDeAprobacion_3" value="-">
+    <input type="hidden" name="id_3" value="279206120">
+    <input type="hidden" name="alumno_3" value="269681770">
+    <input type="hidden" name="isChange_3" value="0">
+    <input type="hidden" name="calificacion_3" size="6"
+            value="2206">
+    <td width="70">2473443</td>
+    <td width="*">JIMENEZ PEREZ LUIS ENRIQUE</td>
+    <td width="53">
+
+        <input type="hidden" name="textoCalificacion_3" size="6"
+                value="S/D">
+        <span class="indicadorCalificacion_-">S/D</span>
+
+    </td>
+    <td width="20">
+        <div id="indicador_3">-</div>
+    </td>		
+</tr>
+
+
+<tr height="24" class="camila_table_rows1">
+    <input type="hidden" name="indicadorDeAprobacion_4" value="-">
+    <input type="hidden" name="id_4" value="279206121">
+    <input type="hidden" name="alumno_4" value="269680863">
+    <input type="hidden" name="isChange_4" value="0">
+    <input type="hidden" name="calificacion_4" size="6"
+            value="2206">
+    <td width="70">2473460</td>
+    <td width="*">NAVARRETE LEON XOCHITL JAZMIN</td>
+    <td width="53">
+
+        <input type="hidden" name="textoCalificacion_4" size="6"
+                value="S/D">
+        <span class="indicadorCalificacion_-">S/D</span>
+
+    </td>
+    <td width="20">
+        <div id="indicador_4">-</div>
+    </td>		
+</tr>
+
+
+<tr height="24" class="camila_table_rows2">
+    <input type="hidden" name="indicadorDeAprobacion_5" value="-">
+    <input type="hidden" name="id_5" value="279206122">
+    <input type="hidden" name="alumno_5" value="269681736">
+    <input type="hidden" name="isChange_5" value="0">
+    <input type="hidden" name="calificacion_5" size="6"
+            value="2206">
+    <td width="70">2473464</td>
+    <td width="*">RAMIREZ CHAVEZ FERNANDA</td>
+    <td width="53">
+
+        <input type="hidden" name="textoCalificacion_5" size="6"
+                value="S/D">
+        <span class="indicadorCalificacion_-">S/D</span>
+
+    </td>
+    <td width="20">
+        <div id="indicador_5">-</div>
+    </td>		
+</tr>
+
+</form>
+<script>
+totalCalificaciones = 6;
+</script>
+
+
+            </table>
+
+        </div>
+
+    </td>
+</tr>
+
+
+
+<tr height="20">
+    <td width="100%">
+         
+
+
+
+<table cellpadding="0" cellspacing="0" height="20" width="100%">
+<tr class="camila_table_row_title">
+
+
+    <script>
+        function setCurrentPage(pageNumber)
+        {
+            document.form1.__CURRENT_PAGE__.value = pageNumber;
+            document.form1.__PAGE_SIZE__.value = 20;
+            document.form1.submit();
+        }
+        function setPageSize(pageSize)
+        {
+            document.form1.__CURRENT_PAGE__.value = "1";
+            document.form1.__PAGE_SIZE__.value = pageSize;
+            document.form1.submit();
+        }
+    </script>
+
+    <td width="*" class="camila_table_title_inactive" height="21"
+            >6 registros encontrados</td>
+
+</tr>
+</table>
+
+    </td>
+</tr>
+
+
+
+</table>
+</form>
+</body>
+</html>

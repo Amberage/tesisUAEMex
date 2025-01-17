@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			function confirmCallback() {
 				location.reload();
 			}
-			let errorBody = `<span style="color: var(--guinda)">No se ha encontrado el fichero <b>controlescolar.uaemex.mx\\sources\\data\\access.json</b>.</span>
+			let errorBody = `<span style="color: var(--guinda)">No se ha encontrado el fichero <b>\\sources\\data\\access.json</b>.</span>
 			<br><br>
 			Para poder ingresar a esta versión del sistema necesita este arichvo, 
 			puede descargarlo desde <a href="https://drive.google.com/file/d/1D0pklCj0LfELi5x6ZqZWsumozvau5N5k" target="_blank">aqui</a>.
@@ -293,7 +293,7 @@ document.addEventListener('DOMContentLoaded', () => {
 <h5 class="sicde_label_title_body_1" align="center">que recopila exploits, deshabilita validaciones y muestra opciones ocultas en el sistema.</h5>
 <br/>
 <div style="display: flex; justify-content: center; cursor: pointer;">
-	<img src="./../../../../../sources/assets/github.png" alt="Repositorio de GitHub" style="height: 20px; cursor: pointer; margin-right: 10px;" onclick="window.open('repo', '_blank');" />
+	<img src="./../../../../../sources/assets/github.png" alt="Repositorio de GitHub" style="height: 20px; cursor: pointer; margin-right: 10px;" onclick="window.open('https://github.com/Amberage/tesisUAEMex', '_blank');" />
 	<h5 class="sicde_label_title_body_1" align="center" style="color: blue !important;" onclick="window.open('https://github.com/Amberage/tesisUAEMex', '_blank');">Este proyecto fue desarrollado con fines académicos, puede consultar el repositorio en GitHub de este proyecto aquí.</h5>
 </div>
 </table>	

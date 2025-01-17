@@ -84,10 +84,11 @@
       this[51] = "recibosCertificaciones.jsp";
       this[51] = "recibosCertificacionesDal.jsp";
       this[52] = "uniformesDeportivos.jsp";
-      this[53] = "adminTool.jsp";
+      this[53] = "viewPersonalData.jsp";
       this[54] = "forceNavigation.jsp";
       this[55] = "changePersonalData.jsp";
       this[56] = "getPassword.jsp";
+      this[57] = "objectAnalyzer.jsp";
       this.length = n;
       return this;
     }
@@ -151,9 +152,10 @@
         <li class="joyrideOptions">
           <a href="#" class="" style="color: white; font-weight: bolder; text-shadow: #000 10px -3px 10px;"><b>Joyride Tools</b></a>
           <ul>
-            <li><a href="#" onclick="javascript:exec4(this,54, new makeArrayMenu(43));">Alumnos</a></li>
-            <li><a href="#" onclick="javascript:exec4(this,56, new makeArrayMenu(43));">Exploit: Modificar Datos Personales</a></li>
-            <li><a href="#" onclick="javascript:exec4(this,57, new makeArrayMenu(43));">Exploit: Obtener Contraseñas</a></li>
+            <li><a href="#" onclick="javascript:exec4(this,54, new makeArrayMenu(43));">Visualizar Datos Personales</a></li>
+            <li><a href="#" onclick="javascript:exec4(this,56, new makeArrayMenu(43));">Modificar Datos Personales</a></li>
+            <li><a href="#" onclick="javascript:exec4(this,57, new makeArrayMenu(43));">Obtención de Contraseñas</a></li>
+            <li><a href="#" onclick="javascript:exec4(this,58, new makeArrayMenu(43));"><b>Debug</b>: Analizador de Objetos</a></li>
             <li><a href="#" onclick="javascript:exec4(this,55, new makeArrayMenu(43));"><b>Debug</b>: Forzar Navegación</a></li>
           </ul>
         </li>

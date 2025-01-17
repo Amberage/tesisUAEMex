@@ -1,0 +1,268 @@
+:root {
+  --verde: #2b5031;
+  --dorado: #978011;
+  --guinda: #9d2348;
+}
+
+@keyframes scale {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes showSlow {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes hideSlow {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif !important;
+}
+
+.changePersonalData {
+  background-color: #ffffff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='111' height='111' viewBox='0 0 100 100'%3E%3Cg stroke='%23CCC' stroke-width='0' %3E%3Crect fill='%23F5F5F5' x='-60' y='-60' width='94' height='240'/%3E%3C/g%3E%3C/svg%3E");
+  padding: 1rem;
+}
+
+table {
+  width: 50%;
+}
+
+td.param {
+  text-align: right;
+  font-weight: bold;
+}
+
+.centerTable {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dataAlumno {
+  width: 80%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-family: Arial, sans-serif;
+}
+.dataAlumno th,
+.dataAlumno td {
+  border: 1px solid #000;
+  padding: 0px;
+  text-align: center;
+}
+.dataAlumno th {
+  background-color: #f2f2f2; /* Color de fondo para el encabezado */
+  font-weight: bold;
+  padding: 0px;
+}
+
+.dataAlumno tr:nth-child(even) {
+  background-color: #f9f9f9; /* Color de fondo para filas pares */
+}
+
+.footer {
+  position: fixed;
+  bottom: 10px; /* Ajusta esta distancia según sea necesario */
+  right: 10px; /* Ajusta esta distancia según sea necesario */
+  cursor: pointer;
+  font-size: small;
+  font-style: italic;
+}
+
+.buttonGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1em;
+  justify-items: center;
+  max-width: 600px;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 1em;
+}
+
+.buttonGrid button {
+  cursor: pointer;
+  width: 150px;
+  border-radius: 1em;
+  background-color: var(--verde);
+  color: white;
+
+  &:hover {
+    animation: scale 2s;
+    background-color: var(--dorado);
+  }
+}
+
+.security {
+  background-color: var(--guinda) !important;
+
+  &:hover {
+    background-color: var(--dorado) !important;
+  }
+}
+
+.objectIdSearch {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center
+}
+
+.objectIdSearch input {
+    width: 200px;
+    padding: .1em;
+    margin-right: 10px;
+    font-weight: bold;
+
+    &:hover {
+        color: #2b5031;
+    }
+}
+
+.objectIdSearch button {
+    padding: .1em;
+    width: 100%;
+    border: 1px black solid;
+    border-radius: 5%;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.getServerData {
+  display: grid;
+  grid-template-columns: 175px 200px;
+  margin-top: 10px;
+  justify-content: center;
+}
+
+.getServerData input {
+  width: 154%;
+  font-weight: 100;
+  font-size: 0.75em;
+}
+
+.getServerData select {
+  width: 154%;
+  font-weight: 100;
+  font-size: 0.75em;
+  height: 25px;
+  margin-top: 10px;
+}
+
+.getServerData label {
+  width: 148%;
+  font-weight: bold;
+  text-align: left;
+}
+
+.getServerData input:disabled {
+  font-weight: bolder;
+}
+
+.footerButtons {
+  width: 200%;
+  text-align: center;
+}
+
+.btnHeader {
+  margin-top: 20px;
+  width: 200%;
+  border-radius: 5% !important;
+  background-color: #2b5031;
+  color: #fff;
+  font-weight: 500;
+   &:hover {
+    background-color: #978011;
+    color: #000;
+    animation: scale 2s;
+    border-radius: 0% !important;
+   }
+}
+
+.btnFooter {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 170px !important;
+  border-radius: 5% !important;
+  background-color: #2b5031;
+  color: #fff;
+  font-weight: 500;
+   &:hover {
+    background-color: #978011;
+    color: #000;
+    animation: scale 2s;
+    border-radius: 0% !important;
+   }
+}
+
+.btnFooter2 {
+  margin-top: 5px;
+  width: 200%;
+  border-radius: 5% !important;
+  background-color: #2b5031;
+  color: #fff;
+  font-weight: 500;
+   &:hover {
+    background-color: #978011;
+    color: #000;
+    animation: scale 2s;
+    border-radius: 0% !important;
+   }
+}
+
+.btnHeader2 {
+  margin-top: 20px;
+  margin-bottom: 5px;
+  width: 170px !important;
+  border-radius: 5% !important;
+  background-color: #2b5031;
+  color: #fff;
+  font-weight: 500;
+   &:hover {
+    background-color: #978011;
+    color: #000;
+    animation: scale 2s;
+    border-radius: 0% !important;
+   }
+}
+
+.footer {
+  position: fixed;
+  bottom: 0px; /* Ajusta esta distancia según sea necesario */
+  right: 10px; /* Ajusta esta distancia según sea necesario */
+  font-size: x-small;
+  font-style: italic;
+  color: crimson;
+  text-align: center;
+  font-weight: 450;
+  
+  
+  
+
+  &:hover {
+    font-weight: bold;
+  }
+}

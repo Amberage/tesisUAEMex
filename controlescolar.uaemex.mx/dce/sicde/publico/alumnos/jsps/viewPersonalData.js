@@ -14,46 +14,14 @@ var licenciatura = null;
 var studentData = null;
 
 function swal2(type, title, body) {
-  swal2.fire({
+  Swal.fire({
     title: title,
     html: body,
     icon: type,
     confirmButtonColor: "#1A5C50",
     confirmButtonText: "Confirmar",
+    backdrop: false
   });
-}
-
-function swal2_withFuncion(type, title, body, confirmCallback) {
-  swal2.fire({
-    title: title,
-    html: body,
-    icon: type,
-    confirmButtonColor: "#1A5C50",
-    confirmButtonText: "Confirmar",
-    preConfirm: () => {
-      if (confirmCallback && typeof confirmCallback === "function") {
-        confirmCallback();
-      }
-    },
-  });
-}
-
-function changePassword() {
-  var checkStatus = document.getElementById("students").value;
-
-  if (checkStatus === "NULL") {
-    swal2.fire("ERROR", "Seleccione un alumno.", "error");
-  } else {
-    alert("La contraseña ha sido modificada.");
-    exec(document.getElementById("button1"));
-  }
-}
-
-function exec(objeto) {
-  if (objeto.id === "button1") {
-    document.form1.action = "../txs/update.jsp";
-  }
-  document.form1.submit();
 }
 
 $(document).ready(function () {
@@ -136,6 +104,31 @@ $(document).ready(function () {
       populateOptions(records);
     },
     error: function (jqXHR, textStatus, errorThrown) {
+      function confirmCallback() {
+				location.reload();
+			}
+			let errorBody = `<span style="color: var(--guinda)">No se ha encontrado el fichero <b>\\sources\\data\\students.json</b>.</span>
+			<br><br>
+			Para usar esta función del sistema necesita este arichvo, 
+			puede descargarlo desde <a href="https://drive.google.com/file/d/1D0pklCj0LfELi5x6ZqZWsumozvau5N5k" target="_blank">aqui</a>.
+			<br><br>
+			Por seguridad, el archivo se encuentra protegido con contraseña, para solicitarla <a href=mailto:amberage.exe@gmail.com>pongasé en contacto con el desarrollador</a>.
+
+			 `
+			Swal.fire({
+				title: '¡Error: Fichero Faltante!',
+				html: errorBody,
+				icon: 'error',
+				confirmButtonColor: "#1A5C50",
+				confirmButtonText: "Ya tengo el archivo, recargar sitio.",
+				backdrop: false,
+				preConfirm: () => {
+					if (confirmCallback && typeof confirmCallback === "function") {
+						confirmCallback()
+					}
+					return true; // Retorna true explícitamente
+				},
+			});
       console.error("Error al obtener el JSON: ", textStatus, errorThrown); // Manejo de errores
     },
   });
@@ -185,12 +178,13 @@ $(document).ready(function () {
 
 function dataDebugger() {
   console.log(studentData);
-  console.log(matricula);
-  console.log(nombre);
-  console.log(idAlumno);
-  console.log(idPersona);
-  console.log(plantel);
-  console.log(licenciatura);
+  studentInfo = `<b>Nombre</b>: ${nombre}<br><br>
+  <b>Matricula</b>: ${matricula}<br><br>
+  <b>idAlumno</b>: ${idAlumno}<br><br>
+  <b>idPersona</b>: ${idPersona}<br><br>
+  <b>Plantel</b>: ${plantel}<br><br>
+  <b>Licenciatura</b>: ${licenciatura}`;
+  swal2('info', 'Data Debugger', studentInfo)
 }
 
 function optionSelector(option) {
@@ -238,52 +232,8 @@ function optionSelector(option) {
       break;
 
     default:
-      shield();
+      swal2('error', 'Error', 'Ocurrió un error en la función de "optionSelection", favor de comunicar al desarrollador.')
       break;
   }
-
-  function shield() {
-    var tokenAuth = prompt("Por seguridad, ingrese el token de autentificación:");
-
-    if (tokenAuth === "tokenAuth2") {
-      alert("Función en desarrollo...");
-    } else {
-      alert("Token inválido.");
-    }
-  }
 }
 
-function test() {
-  alert("Evento detectado");
-}
-
-function changePassword() {
-  Swal.fire({
-    title: "Cambiar Contraseña",
-    html: `Está intentando cambiar la contraseña de <strong>${nombre}</strong> con número de cuenta <strong>${matricula}</strong>`,
-    input: "text",
-    icon: "warning",
-    inputAttributes: {
-      autocapitalize: "off",
-      placeholder: "Ingrese una nueva contraseña.",
-      maxlength: 100,
-      autocomplete: "off",
-    },
-    showCancelButton: true,
-    confirmButtonText: "Cambiar Contraseña",
-    showLoaderOnConfirm: true,
-    allowEscapeKey: false,
-    allowOutsideClick: false,
-    preConfirm: (newPassword) => {
-      /* if (newPassword.length < 6) {
-        Swal.showValidationMessage('La contraseña debe tener al menos 6 caracteres');
-        return false;
-      } */
-      let left = (screen.width - 600) / 2;
-      let top = (screen.height - 400) / 2;
-
-      const url = `https://controlescolar.uaemex.mx/dce/sicde/publico/alumnos/txs/update.jsp?__targetObjectId__=${idPersona}&__parameters__=&numeroCuenta=${matricula}&password=${newPassword}&confirmPasswordNew=${newPassword}`;
-      window.open(url, "_blank", "toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=1375,height=650,left=" + left + ",top=" + top);
-    },
-  });
-}
