@@ -57,7 +57,7 @@ Cada una de las tres herramientas se usa e instala de manera distinta, puede lee
 
 * [__Modificación del Cliente (Menú de Exploits)__](/controlescolar.uaemex.mx/readme.md#instrucciones-de-instalación)
 * [__Extensión "Tampermonkey"__](/Tampermonkey/readme.md#instrucciones-de-instalación)
-* [__Scripts de Python__]()
+* [__Scripts de Python__](/Scripts/readme.md#instalación)
 
 ## Documentación Adicional
 Se incluye esta documentación sobre la estructura, vulnerabilidades y exploits existentes en el SDCE, esta documentación se realizó de manera informal y con fines personales mediante notas digitales usando la aplicación de __Notion__.
