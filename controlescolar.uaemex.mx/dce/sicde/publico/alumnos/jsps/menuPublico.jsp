@@ -28,8 +28,8 @@
     }
 
     function makeArrayMenu(n) {
-      this[0] = "../../commons/jsps/detalle.jsp?idPersona=203821021" + "&idAlu=1";
-      this[1] = "../../commons/jsps/domicilio.jsp?idPersona=203821021" + "&idAlu=1";
+      this[0] = "../../commons/jsps/detalle.jsp?idPersona=1031002" + "&idAlu=1";
+      this[1] = "../../commons/jsps/domicilio.jsp?idPersona=1031002" + "&idAlu=1";
       this[2] = "allModelosCurr.jsp";
       this[3] = "allObservadores.jsp";
       this[4] = "allInscripciones.jsp";
@@ -70,7 +70,7 @@
       this[37] = "documentosIngreso/cartaCompromiso.jsp";
       this[38] = "documentosIngreso/consultaTutor.jsp";
       this[39] = "allInscripcionesMovilidad.jsp";
-      this[40] = "imprimirReciboRen.jsp?idAlumno=203821021";
+      this[40] = "imprimirReciboRen.jsp?idAlumno=217015057";
       this[41] = "documentosIngreso/revalidacion.jsp";
       this[42] = "directorio.jsp";
       this[43] = "antologias.jsp";

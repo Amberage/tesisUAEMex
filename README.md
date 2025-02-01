@@ -7,7 +7,8 @@ Este repositorio incluye todos los archivos y recursos usados y generados durant
 2. [Tecnologías Utilizadas](#tecnologías-utilizadas)
 3. [Instalación y Uso](#instalación-y-uso)
 4. [Documentación Adicional](#documentación-adicional)
-5. [Autor](#autor)
+5. [Miscelánea](#miscelánea)
+6. [Autor](#autor)
 
 ## Descripción
 En este repositorio se recopilan todos los archivos generados durante el desarrollo del pentesting aplicado al __Sistema de Control Escolar de la Universidad Autónoma del Estado de México__:
@@ -82,6 +83,9 @@ La documentación en Notion incluye notas sobre aspectos relevantes del SDCE:
     * Forzar Accesos No Autorizados
 
 [La documentación de las vulnerabilidades mencionadas esta disponible en este enlace.](https://www.notion.so/UAEM-x-164abd56f0c0809a9acded7cd86e7a50?pvs=4)
+
+## Miscelánea
+En la carpeta [Misc](./Misc/) se almacenan archivos que fueron útiles o resultantes durante las etapas de diseño, análisis e implementación del proyecto, pero que no son esenciales para el propósito final de la investigación de tesis.
 
 ## Autor
 

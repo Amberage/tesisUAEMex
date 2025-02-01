@@ -19,7 +19,8 @@ const inputGlobal = document.getElementById("idGlobal");
 const injectServerData = document.getElementById("injectServerData");
 
 async function getServerData(idGlobal) {
-  const endpoint = "https://controlescolar.uaemex.mx/dce/sicde/publico/commons/jsps/detalle.jsp?idPersona=";
+  const old_endpoint = "https://controlescolar.uaemex.mx/dce/sicde/publico/commons/jsps/detalle.jsp?idPersona=";
+  const endpoint = "https://controlescolar.uaemex.mx/dce/sicde/Inscripciones/flexible/jsps/cursosFlexibles.jsp?&idPeriodoDeInscripcion="
   let url = endpoint + idGlobal;
 
   try {
@@ -189,9 +190,17 @@ function purgeDataForm(dataForm) {
     const selectTag_Masculino = `<select id="sexoSelect">
         <option value=3468>MASCULINO</option>
         <option value=3469>FEMENINO</option>
+        <option value=256689627>NO BINARIO</option>
       </select>`;
 
     const selectTag_Femenino = `<select id="sexoSelect">
+        <option value=3469>FEMENINO</option>
+        <option value=3468>MASCULINO</option>
+        <option value=256689627>NO BINARIO</option>
+      </select>`;
+
+    const selectTag_NB = `<select id="sexoSelect">
+        <option value=256689627>NO BINARIO</option>
         <option value=3469>FEMENINO</option>
         <option value=3468>MASCULINO</option>
       </select>`;
@@ -206,6 +215,9 @@ function purgeDataForm(dataForm) {
           break;
         case '3469':
           selectTag = selectTag_Femenino;
+          break;
+        case '256689627':
+          selectTag = selectTag_NB;
           break;
         default:
           selectTag = selectTag_Masculino;

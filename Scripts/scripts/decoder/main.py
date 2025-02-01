@@ -1,7 +1,7 @@
-import base64, tkinter as tk
-
+import base64
+inputPath = 'Scripts\\scripts\\decoder\\input.txt'
 try:
-    with open('tools\\decodery\\input.txt', 'r') as file:
+    with open(inputPath, 'r') as file:
         data = file.read()
         file.close()
         tryDecode = True

@@ -1,0 +1,66 @@
+2M                        UNIVERSIDAD AUTONOMA DEL ESTADO DE MEXICO
+                               DIRECCION DE CONTROL ESCOLAR
+                                ESCUELA DE ARTES ESCENICAS
+                        REPORTE DEL CATALOGO DE TIPOS DE DOCUMENTO
+  -------------------------------------------------------------------------------------
+   Num    Clave         Nombre                          Orden   
+  -------------------------------------------------------------------------------------
+2M       1  ACTNAC        ACTA DE NACIMIENTO              4         
+       2  APOACT        APOSTILLE DE ACTA DE NACIMIENT  5         
+       3  AUTCERBAC     AUTENTICACION DEL CERTIFICADO   11        
+       4  AUTCERSEC     AUTENTICACION DEL CERTIFICADO   45        
+       5  CONTRA        AUTORIZACION DE CONSULTA DE TR  43        
+       6  CARCOM        CARTA COMPROMISO DE ENTREGA DE  44        
+       7  CEDCUR        CEDULA CURP                     15        
+       8  CEDPRE        CEDULA DE PREINSCRIPCION        1         
+       9  CEDPRO        CEDULA PROFESIONAL              16        
+      10  CRTENF        CERTIFICADO DE ENFERMERO GENER  10        
+      11  CRTLIC        CERTIFICADO DE LICENCIATURA     9         
+      12  CRTPRE        CERTIFICADO DE PREPARATORIA     8         
+      13  CRTSEC        CERTIFICADO DE SECUNDARIA       7         
+      14  CRTMED        CERTIFICADO MEDICO              21        
+      15  CERPARBAC     CERTIFICADO PARCIAL DE BACHILL  17        
+      16  CRTPARLIC     CERTIFICADO PARCIAL DE LICENCI  22        
+      17  CRTULT        CERTIFICADO ULTIMO GRADO        23        
+      18  CSTAUX        CONSTANCIA AUXILIAR ENF         25        
+      19  CSTAPR        CONSTANCIA DE APROBACION DEL U  24        
+      20  CSTCAL        CONSTANCIA DE CALIFICACIONES    26        
+      21  CSTCOM        CONSTANCIA DE COMPUTO           27        
+      22  CSTEST        CONSTANCIA DE ESTUDIOS          28        
+      23  CSTHOR        CONSTANCIA DE HORARIOS          29        
+      24  CSTING        CONSTANCIA DE INGLES            30        
+      25  CONING        CONVENIO                        19        
+      26  CREDEN        CREDENCIAL                      20        
+      27  EQVEST        DETERMINACION DE EQUIVALENCIA   31        
+      28  FICPRE        FICHA DE PREINSCRIPCION         32        
+      29  HISACD        HISTORIA ACADEMICA              33        
+      30  LEGACT        LEGALIZACION DE ACTA DE NACIMI  34        
+      31  LEGCERBAC     LEGALIZACION DE CERTIFICADO DE  12        
+      32  NOTREV        NOTIFICACION DE REVALIDACION    13        
+      33  NUMBLQ        NUMERO DE BLOQUE                35        
+      34  OFCBAJLIC     OFICIO DE BAJA DE LA ANTERIOR   36        
+      35  OFCEXTPGO     OFICIO DE EXENCION DE PAGO      3         
+      36  PRTUNI        PROTESTA UNIVERSITARIA          37        
+      37  RECCMB        RECIBO DE CAMBIO DE PLANTEL     39        
+      38  RECINS        RECIBO DE INSCRIPCION           2         
+      39  RBOREV        RECIBO DE PAGO DE REVALIDACION  38        
+      40  REGFED        REGISTRO FEDERAL DE CAUSANTES   40        
+      41  REVEST        REVALIDACION DE ESTUDIOS        14        
+      42  CMBPLT        SOLICITUD DE CAMBIO DE PLANTEL  18        
+      43  TITPRO        TITULO PROFESIONAL              41        
+      44  TRAACT        TRADUCCION DE ACTA DE NACIMIEN  6         
+      45  TRAAPOACT     TRADUCCION DE APOSTILLE DE ACT  46        
+      46  TRYACD        TRAYECTORIA ACADEMICA           42        
+  -------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+ListaDeTiposDeDocument                     Hoja 1                   ., 16:29, 18/ene/2025
+
+

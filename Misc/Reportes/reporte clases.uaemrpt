@@ -1,0 +1,264 @@
+2M                        UNIVERSIDAD AUTONOMA DEL ESTADO DE MEXICO
+                               DIRECCION DE CONTROL ESCOLAR
+                                ESCUELA DE ARTES ESCENICAS
+                              REPORTE DEL CATALOGO DE CLASES
+  -------------------------------------------------------------------------------------
+   Num    Clave               Nombre                                                  
+  -------------------------------------------------------------------------------------
+2M       1  Alumno              Alumno                                                  
+       2  AlumnosPorCurso     AlumnosPorCurso                                         
+       3  AlumnosPorOrganism  AlumnosPorOrganismoAcademico                            
+       4  AlumnosPorPadreDeF  AlumnosPorPadreDeFamilia                                
+       5  AlumnosPorSubcurso  AlumnosPorSubcurso                                      
+       6  AlumnosPorTesis     AlumnosPorTesis                                         
+       7  AlumnosPorTutor     AlumnosPorTutor                                         
+       8  AreaDeConocimiento  AreaDeConocimiento                                      
+       9  AreasDeConocimient  AreasDeConocimientoPorAsignatura                        
+      10  ArticuloReglamenta  ArticuloReglamentario                                   
+      11  Asignatura          Asignatura                                              
+      12  AsignaturasImparti  AsignaturasImpartiblesPorProfesor                       
+      13  AsignaturasParaCur  AsignaturasParaCursos                                   
+      14  AsignaturasPorLine  AsignaturasPorLineaDeEstudios                           
+      15  AsignaturasPorMode  AsignaturasPorModeloCurricular                          
+      16  AsignaturasPorOrga  AsignaturasPorOrganismoAcademico                        
+      17  AsignaturasPorPreo  AsignaturasPorPreoferta                                 
+      18  BloqueCurricular    BloqueCurricular                                        
+      19  Calendario          Calendario                                              
+      20  Calificacion        Calificacion                                            
+      21  CalificacionesConv  CalificacionesConvalidadas                              
+      22  CalificacionesModi  CalificacionesModificadas                               
+      23  CalificacionesPorA  CalificacionesPorAlumno                                 
+      24  CalificacionesPorC  CALIFICACIONESPORCREDITOSLM                             
+      25  CalificacionesReva  CalificacionesRevalidadas                               
+      26  CalificacionesReva  CalificacionesRevalidadas2                              
+      27  CalificacionProfes  CalificacionProfesional                                 
+      28  CentroDeCostos      CentroDeCostos                                          
+      29  CentroDeCostosPorC  CentroDeCostosPorCuentaContable                         
+      30  CentroDeCostosPorT  CentroDeCostosPorTipoDeRecibo                           
+      31  Ciudad              Ciudad                                                  
+      32  Clase               Clase                                                   
+      33  ClasesPosiblesPorP  ClasesPosiblesPorProfesor                               
+      34  ClasesSemanalesPor  ClasesSemanalesPorAsignatura                            
+      35  ControlDeCertifica  ControlDeCertificados                                   
+      36  ControlDeRecibos    ControlDeRecibos                                        
+      37  CreditosPorInscrip  CreditosPorInscripcion                                  
+      38  CuentaBancaria      CuentaBancaria                                          
+      39  CuentaContable      CuentaContable                                          
+      40  Curso               Curso                                                   
+      41  DerechosDeInscripc  DerechosDeInscripcion                                   
+      42  DiaFestivo          DiaFestivo                                              
+      43  DiagnosticoDeProce  DiagnosticoDeProceso                                    
+      44  DiagnosticosDeDist  DiagnosticosDeDistribucion                              
+      45  DiagnosticosPorObj  DiagnosticosPorObjeto                                   
+      46  DiasDeLaSemana      DiasDeLaSemana                                          
+      47  DictamenDeEquivale  DictamenDeEquivalenciaDeEstudios                        
+      48  DictamenDeRevalida  DictamenDeRevalidacionDeEstudios                        
+      49  DictamenDeRevalida  DictamenDeRevalidacion2                                 
+      50  DirectoresDeTesis   DirectoresDeTesis                                       
+      51  DisponibilidadDeEs  DisponibilidadDeEspacios                                
+      52  DisponibilidadDelP  DisponibilidadDelProfesor                               
+      53  Documento           Documento                                               
+      54  DocumentoDeCalific  DocumentoDeCalificaciones                               
+      55  DocumentosPorObjet  DocumentosPorObjeto                                     
+
+ListaDeClase                               Hoja 1                   ., 16:27, 18/ene/2025
+
+
+2M                        UNIVERSIDAD AUTONOMA DEL ESTADO DE MEXICO
+                               DIRECCION DE CONTROL ESCOLAR
+                                ESCUELA DE ARTES ESCENICAS
+                              REPORTE DEL CATALOGO DE CLASES
+  -------------------------------------------------------------------------------------
+   Num    Clave               Nombre                                                  
+  -------------------------------------------------------------------------------------
+      56  DocumentosPorPerso  DocumentosPorPersona                                    
+      57  Domicilio           Domicilio                                               
+      58  Edificio            Edificio                                                
+      59  EjecucionDeProceso  EjecucionDeProceso                                      
+      60  Entity              Entity                                                  
+      61  EquivalenciaEntreA  EquivalenciaEntreAsignaturas                            
+      62  Escuela             Escuela                                                 
+      63  Espacio             Espacio                                                 
+      64  EspaciosAceptadosP  EspaciosAceptadosPorAsignatura                          
+      65  EspaciosParaCursos  EspaciosParaCursos                                      
+      66  EsqueletoDeRecibo   EsqueletoDeRecibo                                       
+      67  Estado              Estado                                                  
+      68  EstadoCivil         EstadoCivil                                             
+      69  EstadoDeCertificad  EstadoDeCertificado                                     
+      70  EstatusDeRecibo     EstatusDeRecibo                                         
+      71  EvaluacionProfesio  EvaluacionProfesional                                   
+      72  ExcencionesReglame  ExcencionesReglamentariasPorAlumno                      
+      73  FechaDeUltimoCalcu  FechaDeUltimoCalculo                                    
+      74  FechasDeEvaluacion  FechasDeEvaluacion                                      
+      75  FechasPorCalendari  FechasPorCalendario                                     
+      76  FichasDeInscripcio  FichasDeInscripcion                                     
+      77  FuncionFinanciera   FuncionFinanciera                                       
+      78  GradoAcademico      GradoAcademico                                          
+      79  GruposDeLineasDeEs  GruposDeLineasDeEstudio                                 
+      80  HistoriaAcademica   Historia acad‚mica                                      
+      81  HorariosDeInscripc  HorariosDeInscripcion                                   
+      82  HorariosPorCurso    HorariosPorCurso                                        
+      83  HorariosPorPreofer  HorariosPorPreoferta                                    
+      84  HorariosPorSubcurs  HorariosPorSubcurso                                     
+      85  HuecosPorCurso      HuecosPorCurso                                          
+      86  ImportesPorEsquele  ImportesPorEsqueletoDeRecibo                            
+      87  ImportesPorRecibo   ImportesPorRecibo                                       
+      88  Indicador           Indicador                                               
+      89  IndicadoresAsociad  IndicadoresAsociadosAlModeloCurricular                  
+      90  IndicadoresPorObje  IndicadoresPorObjeto                                    
+      91  InscripcionesPorAl  InscripcionesPorAlumno                                  
+      92  Institucion         Institucion                                             
+      93  InstitucionBancari  InstitucionBancaria                                     
+      94  LineaDeEstudios     LineaDeEstudios                                         
+      95  LineaDeInvestigaci  LineaDeInvestigacion                                    
+      96  LineasDeEstudioPor  LineasDeEstudioPorAdscripcion                           
+      97  ListaDeCalificacio  ListaDeCalificaciones                                   
+      98  Lugar               Lugar                                                   
+      99  MateriasDeTesis     MateriasDeTesis                                         
+     100  ModalidadesDeEstud  ModalidadesDeEstudio                                    
+     101  ModalidadesDeEstud  ModalidadesDeEstudioPorAlumno                           
+     102  ModalidadesDeEstud  ModalidadesDeEstudioPorModeloCurricular                 
+     103  ModalidadesDeIngre  ModalidadesDeIngreso                                    
+     104  ModeloBloqueGrupoD  ModeloBloqueGrupoDistribucion                           
+     105  ModeloBloqueGrupoP  ModeloBloqueGrupoPorCurso                               
+     106  ModeloCurricular    ModeloCurricular                                        
+     107  ModeloDeEvaluacion  ModeloDeEvaluacion                                      
+     108  ModelosCurriculare  ModelosCurricularesPorAlumno                            
+     109  ModelosCurriculare  ModelosCurricularesPorOrganismoAcademico                
+     110  ModelosCurriculare  ModelosCurricularesPorPeriodo                           
+
+ListaDeClase                               Hoja 2                   ., 16:27, 18/ene/2025
+
+
+2M                        UNIVERSIDAD AUTONOMA DEL ESTADO DE MEXICO
+                               DIRECCION DE CONTROL ESCOLAR
+                                ESCUELA DE ARTES ESCENICAS
+                              REPORTE DEL CATALOGO DE CLASES
+  -------------------------------------------------------------------------------------
+   Num    Clave               Nombre                                                  
+  -------------------------------------------------------------------------------------
+     111  ModelosDeEvaluacio  ModelosDeEvaluacionPorOrganismoAcademico                
+     112  MovilidadEstudiant  MovilidadEstudiantilPorOrganismoAcademico               
+     113  MovilidadNacionalI  MovilidadNacionalInternacional                          
+     114  Municipio           Municipio                                               
+     115  NivelDeEstudios     NivelDeEstudios                                         
+     116  Nucleo              Nucleo                                                  
+     117  Object              Object                                                  
+     118  OrganismoAcademico  OrganismoAcademico                                      
+     119  PadreDeFamilia      PadreDeFamilia                                          
+     120  Pais                Pais                                                    
+     121  Parametro           Parametro                                               
+     122  ParametrosDeInscri  ParametrosDeInscripcion                                 
+     123  ParametrosPorObjet  ParametrosPorObjeto                                     
+     124  Perfil              Perfil                                                  
+     125  PerfilesPorUsuario  PerfilesPorUsuario                                      
+     126  PeriodoDeEstudios   PeriodoDeEstudios                                       
+     127  PeriodoDeInscripci  PeriodoDeInscripcion                                    
+     128  PeriodoDePreoferta  PeriodoDePreoferta                                      
+     129  PeriodosDeEstudioP  PeriodosDeEstudioPorOrganismoAcademico                  
+     130  Permiso             Permiso                                                 
+     131  PermisosPorPerfil   PermisosPorPerfil                                       
+     132  PermisosPorUsuario  PermisosPorUsuario                                      
+     133  Persona             Persona                                                 
+     134  PlanDeEstudios      PlanDeEstudios                                          
+     135  PlanesDeEstudioPor  PlanesDeEstudioPorOrganismoAcademico                    
+     136  PreferenciasDePreo  PreferenciasDePreoferta                                 
+     137  Profesor            Profesor                                                
+     138  ProfesoresParaCurs  ProfesoresParaCursos                                    
+     139  ProfesoresPorCurso  ProfesoresPorCurso                                      
+     140  ProfesoresPorLista  ProfesoresPorListaDeCalificaciones                      
+     141  ProfesoresPorOrgan  ProfesoresPorOrganismoAcademico                         
+     142  ProfesoresPorPreof  ProfesoresPorPreoferta                                  
+     143  ProfesoresPorSubcu  ProfesoresPorSubcurso                                   
+     144  Recibo              Recibo                                                  
+     145  RegistroDeCertific  RegistroDeCertificado                                   
+     146  Reglamento          Reglamento                                              
+     147  ReglamentoCurricul  ReglamentoCurricular                                    
+     148  RestriccionReglame  RestriccionReglamentaria                                
+     149  ServiciosPorEspaci  ServiciosPorEspacio                                     
+     150  Sexo                Sexo                                                    
+     151  SinodalesPorEvalua  SinodalesPorEvaluacionProfesional                       
+     152  Subcurso            Subcurso                                                
+     153  Tesis               Tesis                                                   
+     154  Tipo                Tipo                                                    
+     155  TipoDeAsignatura    TipoDeAsignatura                                        
+     156  TipoDeBajaVoluntar  TipoDeBajaVoluntaria                                    
+     157  TipoDeBanco         TipoDeBanco                                             
+     158  TipoDeCertificado   TipoDeCertificado                                       
+     159  TipoDeCreditosLM    TIPODECREDITOSLM                                        
+     160  TipoDeDocumento     TipoDeDocumento                                         
+     161  TipoDeEscuela       TipoDeEscuela                                           
+     162  TipoDeEspacio       TipoDeEspacio                                           
+     163  TipoDeEvaluacion    TipoDeEvaluacion                                        
+     164  TipoDeEvaluacionPr  TipoDeEvaluacionProfesional                             
+     165  TipoDeFecha         TipoDeFecha                                             
+
+ListaDeClase                               Hoja 3                   ., 16:27, 18/ene/2025
+
+
+2M                        UNIVERSIDAD AUTONOMA DEL ESTADO DE MEXICO
+                               DIRECCION DE CONTROL ESCOLAR
+                                ESCUELA DE ARTES ESCENICAS
+                              REPORTE DEL CATALOGO DE CLASES
+  -------------------------------------------------------------------------------------
+   Num    Clave               Nombre                                                  
+  -------------------------------------------------------------------------------------
+     166  TipoDeHoras         TipoDeHoras                                             
+     167  TipoDeIncorporacio  TipoDeIncorporacion                                     
+     168  TipoDeModeloCurric  TipoDeModeloCurricular                                  
+     169  TipoDeOptatividad   TipoDeOptatividad                                       
+     170  TipoDeOrganismoAca  TipoDeOrganismoAcademico                                
+     171  TipoDePeriodoDeEst  TipoDePeriodoDeEstudios                                 
+     172  TipoDeRecibo        TipoDeRecibo                                            
+     173  TipoDeRestriccionR  TipoDeRestriccionReglamentaria                          
+     174  TipoDeServicio      TipoDeServicio                                          
+     175  TipoDeSinodal       TipoDeSinodal                                           
+     176  TipoDeTesis         TipoDeTesis                                             
+     177  TipoDeVeredicto     TipoDeVeredicto                                         
+     178  TipoDeVigencia      TipoDeVigencia                                          
+     179  TipoPrimitivo       TipoPrimitivo                                           
+     180  TiposDeEvaluacionP  TiposDeEvaluacionPorModeloDeEvaluacion                  
+     181  TiposDeHoraPorAsig  TiposDeHoraPorAsignatura                                
+     182  Turno               Turno                                                   
+     183  Usuario             Usuario                                                 
+     184  ValoresAceptadosPo  ValoresAceptadosPorParametro                            
+  -------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ListaDeClase                               Hoja 4                   ., 16:27, 18/ene/2025
+
+

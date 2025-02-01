@@ -17,7 +17,8 @@ const inputGlobal = document.getElementById("idGlobal");
 const injectServerData = document.getElementById("injectServerData");
 
 async function getServerData(idGlobal) {
-  const endpoint = "https://controlescolar.uaemex.mx/dce/sicde/publico/commons/jsps/detalle.jsp?idPersona=";
+  const old_endpoint = "https://controlescolar.uaemex.mx/dce/sicde/publico/commons/jsps/detalle.jsp?idPersona=";
+  const endpoint = "https://controlescolar.uaemex.mx/dce/sicde/Inscripciones/flexible/jsps/cursosFlexibles.jsp?&idPeriodoDeInscripcion="
   let url = endpoint + idGlobal;
 
   try {
