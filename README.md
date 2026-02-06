@@ -89,4 +89,4 @@ En la carpeta [Misc](./Misc/) se almacenan archivos que fueron útiles o resulta
 
 ## Autor
 
-Desarrollado por Alejandro Galicia en 2025, como parte del proyecto te titulación por tesis para obtener el grado de Licenciado en Ingeniería en Computación por la Universidad Autónoma del Estado de México.
+Desarrollado por Alejandro Galicia durante 2024 a 2026, como parte del proyecto te titulación por tesis para obtener el grado de Licenciado en Ingeniería en Computación por la Universidad Autónoma del Estado de México.
